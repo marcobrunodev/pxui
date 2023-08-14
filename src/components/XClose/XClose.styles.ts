@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import close from '../../assets/icons/close.png'
 
-const XClose = styled.img.attrs({ src: close, alt: 'Close icon' })`
+export const XClose = styled.img.attrs({ src: close, alt: 'Close icon' })`
   cursor: var(--cursor-pointer);
 `
 

@@ -147,7 +147,7 @@ const hasError = ({ error = false }: Pick<XContainerTypes, 'error'>) => error &&
   }
 `
 
-const XContainer = styled.article<XContainerTypes>`
+export const XContainer = styled.article<XContainerTypes>`
   --border-width: 0.6rem;
   --size-border: 100%;
 

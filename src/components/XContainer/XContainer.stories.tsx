@@ -11,73 +11,91 @@ type Story = StoryObj<typeof XContainer>
 
 export const Normal: Story = {
   args: {
-    children: 'Your texts or components here',
+    children: 'Your text or component(s) here',
     full: false,
     titleAttr: '',
     simple: false,
     borderAnimation: false,
-    primary: false
+    primary: false,
+    success: false,
+    warning: false,
+    error: false
   }
 }
 
 export const Full: Story = {
   args: {
-    children: 'Your texts or components here',
+    children: 'Your text or component(s) here',
     full: true,
     titleAttr: '',
     simple: false,
     borderAnimation: false,
-    primary: false
+    primary: false,
+    success: false,
+    warning: false,
+    error: false
   }
 }
 
 export const WithTitle: Story = {
   args: {
-    children: 'Your texts or components here',
+    children: 'Your text or component(s) here',
     full: false,
     titleAttr: 'Title',
     simple: false,
     borderAnimation: false,
-    primary: false
+    primary: false,
+    success: false,
+    warning: false,
+    error: false
   }
 }
 
 export const Simple: Story = {
   args: {
-    children: 'Your texts or components here',
+    children: 'Your text or component(s) here',
     full: false,
     titleAttr: '',
     simple: true,
     borderAnimation: false,
-    primary: false
+    primary: false,
+    success: false,
+    warning: false,
+    error: false
   }
 }
 
 export const SimpleWithTitle: Story = {
   args: {
-    children: 'Your texts or components here',
+    children: 'Your text or component(s) here',
     full: false,
     titleAttr: 'Title',
     simple: true,
     borderAnimation: false,
-    primary: false
+    primary: false,
+    success: false,
+    warning: false,
+    error: false
   }
 }
 
 export const BorderAnimation: Story = {
   args: {
-    children: 'Your texts or components here',
+    children: 'Your text or component(s) here',
     full: false,
     titleAttr: '',
     simple: true,
     borderAnimation: true,
-    primary: false
+    primary: false,
+    success: false,
+    warning: false,
+    error: false
   }
 }
 
 export const PrimaryBorderAnimation: Story = {
   args: {
-    children: 'Your texts or components here',
+    children: 'Your text or component(s) here',
     full: false,
     titleAttr: '',
     simple: true,
@@ -91,7 +109,7 @@ export const PrimaryBorderAnimation: Story = {
 
 export const SuccessBorderAnimation: Story = {
   args: {
-    children: 'Your texts or components here',
+    children: 'Your text or component(s) here',
     full: false,
     titleAttr: '',
     simple: true,
@@ -105,7 +123,7 @@ export const SuccessBorderAnimation: Story = {
 
 export const WarningBorderAnimation: Story = {
   args: {
-    children: 'Your texts or components here',
+    children: 'Your text or component(s) here',
     full: false,
     titleAttr: '',
     simple: true,
@@ -119,7 +137,7 @@ export const WarningBorderAnimation: Story = {
 
 export const ErrorBorderAnimation: Story = {
   args: {
-    children: 'Your texts or components here',
+    children: 'Your text or component(s) here',
     full: false,
     titleAttr: '',
     simple: true,
