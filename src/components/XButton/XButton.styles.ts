@@ -1,14 +1,14 @@
 import styled, { css } from 'styled-components'
 import ButtonTypes from './XButton.types'
 
-const hasPrimary = ({ primary = true }: { primary: boolean }) => primary === true && css`
+const hasPrimary = ({ primary = true }: Pick<ButtonTypes, 'primary'>) => primary && css`
   --bg-color: var(--color-primary);
   --box-shadow-color: var(--color-primary-shadow);
   --hover-bg-color: var(--color-primary-dark);
   --color-focus: var(--color-primary-light);
 `
 
-const hasSuccess = ({ success = false }: { success: boolean }) => success && css`
+const hasSuccess = ({ success = false }: Pick<ButtonTypes, 'success'>) => success && css`
   --bg-color: var(--color-success);
   --box-shadow-color: var(--color-success-shadow);
   --hover-bg-color: var(--color-success-dark);
@@ -16,7 +16,7 @@ const hasSuccess = ({ success = false }: { success: boolean }) => success && css
   --color-focus: var(--color-success-light);
 `
 
-const hasWarning = ({ warning = false }: { warning: boolean }) => warning && css`
+const hasWarning = ({ warning = false }: Pick<ButtonTypes, 'warning'>) => warning && css`
   --bg-color: var(--color-warning);
   --box-shadow-color: var(--color-warning-shadow);
   --hover-bg-color: var(--color-warning-dark);
@@ -24,14 +24,14 @@ const hasWarning = ({ warning = false }: { warning: boolean }) => warning && css
   --color-focus: var(--color-warning-light);
 `
 
-const hasError = ({ error = false }: { error: boolean }) => error && css`
+const hasError = ({ error = false }: Pick<ButtonTypes, 'error'>) => error && css`
   --bg-color: var(--color-error);
   --box-shadow-color: var(--color-error-shadow);
   --hover-bg-color: var(--color-error-dark);
   --color-focus: var(--color-error-light);
 `
 
-const hasDisabled = ({ disabled = false }: { disabled: boolean }) => disabled && css`
+const hasDisabled = ({ disabled = false }: Pick<ButtonTypes, 'disabled'>) => disabled && css`
   --bg-color: var(--color-disabled);
   --box-shadow-color: var(--color-disabled-shadow);
   --hover-bg-color: var(--color-disabled);
@@ -63,11 +63,15 @@ const XButton = styled.button<ButtonTypes>`
   border-image-outset: 2;
   position: relative;
   display: inline-block;
-  padding: 0.6rem 0.8rem;
+  padding: 0.6rem 1rem 1.2rem;
   margin: 0.4rem;
   text-align: center;
+  text-decoration: none;
+  font-family: 'FontPxBold', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
   vertical-align: middle;
-  letter-spacing: 0.1rem;
+  text-transform: uppercase;
   cursor: var(--cursor-pointer);
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -77,7 +81,6 @@ const XButton = styled.button<ButtonTypes>`
   background-color: var(--bg-color);
   border-style: solid;
   border-width: 0.4rem;
-  text-decoration: none;
   transition: 30ms transform ease-in-out, 100ms box-shadow ease-in-out;
 
   &:after {  

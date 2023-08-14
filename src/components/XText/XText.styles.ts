@@ -1,39 +1,39 @@
 import styled, { css } from 'styled-components'
 import XTextTypes from './XText.type'
 
-const hasPrimary = ({ primary = true }: { primary: boolean }) => primary && css`
+const hasPrimary = ({ primary = true }: Pick<XTextTypes, 'primary'>) => primary && css`
   color: var(--color-primary);
 `
 
-const hasSuccess = ({ success = false }: { success: boolean }) => success && css`
+const hasSuccess = ({ success = false }: Pick<XTextTypes, 'success'>) => success && css`
   color: var(--color-success);
 `
 
-const hasWarning = ({ warning = false }: { warning: boolean }) => warning && css`
+const hasWarning = ({ warning = false }: Pick<XTextTypes, 'warning'>) => warning && css`
   color: var(--color-warning);
 `
 
-const hasError = ({ error = false }: { error: boolean }) => error && css`
+const hasError = ({ error = false }: Pick<XTextTypes, 'error'>) => error && css`
   color: var(--color-error);
 `
 
-const hasDisabled = ({ disabled = false }: { disabled: boolean }) => disabled && css`
+const hasDisabled = ({ disabled = false }: Pick<XTextTypes, 'disabled'>) => disabled && css`
   color: var(--color-disabled);
 `
 
-const hasBig = ({ big = false }: { big: boolean }) => big && css`
+const hasBig = ({ big = false }: Pick<XTextTypes, 'big'>) => big && css`
   font-size: 2rem;
 `
 
-const hasBigger = ({ bigger = false }: { bigger: boolean }) => bigger && css`
+const hasBigger = ({ bigger = false }: Pick<XTextTypes, 'bigger'>) => bigger && css`
   font-size: 2.5rem;
 `
 
-const hasCenter = ({ center = false }: { center: boolean }) => center && css`
+const hasCenter = ({ center = false }: Pick<XTextTypes, 'center'>) => center && css`
   text-align: center;
 `
 
-const hasUppercase = ({ uppercase = false }: { uppercase: boolean }) => uppercase && css`
+const hasUppercase = ({ uppercase = false }: Pick<XTextTypes, 'uppercase'>) => uppercase && css`
   text-transform: uppercase;
   letter-spacing: 0.1em;
 `
