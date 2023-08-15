@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import XTextTypes from './XText.type'
 
-const hasPrimary = ({ primary = true }: Pick<XTextTypes, 'primary'>) => primary && css`
+const hasPrimary = ({ primary = false }: Pick<XTextTypes, 'primary'>) => primary && css`
   color: var(--color-primary);
 `
 
