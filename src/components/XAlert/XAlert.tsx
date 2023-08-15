@@ -2,7 +2,7 @@ import Close from '../XClose'
 import S from './XAlert.styles'
 import XAlertTypes from './XAlert.types'
 
-const hasError = (errorMessage: Pick<XAlertTypes, 'errorMessage'>) => (
+const hasError = ({ errorMessage }: Pick<XAlertTypes, 'errorMessage'>) => (
   errorMessage &&
   <S.Error>
     {errorMessage}
@@ -15,7 +15,7 @@ const Alert = ({ children, handleClose, isOpen, errorMessage }: XAlertTypes) => 
       <Close onClick={handleClose} />
       {children}
 
-      {hasError(errorMessage)}
+      {hasError({ errorMessage })}
     </S.XAlert>
 
   </S.WrapperXAlert>

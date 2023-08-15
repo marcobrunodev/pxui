@@ -1,8 +1,8 @@
-import { MouseEvent, ReactNode } from "react"
+import { MouseEventHandler, ReactNode } from "react"
 
 export type XAlertTypes = {
   children: ReactNode,
-  handleClose: MouseEvent<HTMLImageElement>,
+  handleClose: MouseEventHandler<HTMLImageElement>,
   isOpen: boolean,
   errorMessage: boolean | string
 }
