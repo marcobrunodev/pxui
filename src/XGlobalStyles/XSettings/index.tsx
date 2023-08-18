@@ -4,6 +4,7 @@ import XSnoarColors from './XSnoarColors'
 import XSizes from './XSizes'
 import XCursors from './XCursors'
 import XGaps from './XGaps'
+import XBorderImageSource from './XBorderImageSoruce'
 
 const XSettings: FC = () => (
   <>
@@ -12,6 +13,7 @@ const XSettings: FC = () => (
     <XSizes />
     <XCursors />
     <XGaps />
+    <XBorderImageSource />
   </>
 )
 

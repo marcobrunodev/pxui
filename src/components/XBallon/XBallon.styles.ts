@@ -15,8 +15,6 @@ export const XBallon = styled(XContainer)`
   margin-bottom: 1.8rem;
   line-height: 1.8em;
 
-  ${hasFull};
-
   &::before, &::after {
     content: '';
     position: absolute;
@@ -26,7 +24,7 @@ export const XBallon = styled(XContainer)`
   }
 
   &::before {
-    bottom: -0.4rem;
+    bottom: -0.6rem;
     width: 1.8rem;
     height: 1rem;
     border-right: var(--border-width) solid var(--color-white);
@@ -40,6 +38,8 @@ export const XBallon = styled(XContainer)`
     color: var(--color-white);
     box-shadow: calc(var(--border-width) * -1) 0,var(--border-width) 0,calc(var(--border-width) * -1) var(--border-width) var(--color-black),0 var(--border-width),calc(var(--border-width) * -2) var(--border-width),calc(var(--border-width) * -1) calc(var(--border-width) * 2),calc(var(--border-width) * -2) calc(var(--border-width) * 2);
   }
+
+  ${hasFull};
 `
 
 const S = {

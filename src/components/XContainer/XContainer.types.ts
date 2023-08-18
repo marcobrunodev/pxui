@@ -9,7 +9,8 @@ export type XContainerTypes = {
   primary?: boolean,
   success?: boolean,
   warning?: boolean,
-  error?: boolean
+  error?: boolean,
+  disabled?: boolean
 }
 
 export default XContainerTypes

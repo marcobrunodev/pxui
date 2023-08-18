@@ -10,7 +10,7 @@ export const BorderAnimation = () => (
   </>
 )
 
-const XContainer = ({ full, simple, titleAttr, borderAnimation, children, primary, success, warning, error }: XContainerTypes) => (
+const XContainer = ({ full, simple, titleAttr, borderAnimation, children, primary, success, warning, error, disabled }: XContainerTypes) => (
   <S.XContainer
     full={full}
     simple={simple}
@@ -20,10 +20,11 @@ const XContainer = ({ full, simple, titleAttr, borderAnimation, children, primar
     success={success}
     warning={warning}
     error={error}
+    disabled={disabled}
   >
     {titleAttr && <S.XTitle>{titleAttr}</S.XTitle>}
     {children}
-    {borderAnimation && <BorderAnimation />}
+    {borderAnimation && !full && <BorderAnimation />}
   </S.XContainer>
 )
 
