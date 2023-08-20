@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import XArrow from '.'
 
 const meta: Meta<typeof XArrow> = {
-  title: 'components/XArrow',
+  title: 'icons/XArrow',
   component: XArrow
 }
 export default meta

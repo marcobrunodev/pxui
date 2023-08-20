@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import XClose from '.'
 
 const meta: Meta<typeof XClose> = {
-  title: 'components/XClose',
+  title: 'icons/XClose',
   component: XClose
 }
 export default meta
