@@ -4,7 +4,7 @@ import image from '../../../assets/storybook/360x360.png'
 import { CenterXAndY } from '../../Storybook'
 
 const meta: Meta<typeof XCard> = {
-  title: 'components/XCard/01 - Normal',
+  title: 'components/XCard/06 - Badges and onClick',
   component: XCard,
   decorators: [
     (Story) => (
@@ -18,13 +18,21 @@ export default meta
 
 type Story = StoryObj<typeof XCard>
 
-export const Normal: Story = {
+export const WithButtonAndOnClick: Story = {
   args: {
     titleContent: 'Title here',
     image,
     alt: 'Alt to image',
     description: 'Description here',
-    onClick: undefined,
+    badges: {
+      content: 'New',
+      primary: false,
+      success: false,
+      warning: false,
+      error: false,
+      disabled: false
+    },
+    onClick: () => console.log('Your function here'),
     borderAnimation: false,
     primary: false,
     success: false,
@@ -34,13 +42,21 @@ export const Normal: Story = {
   }
 }
 
-export const Primary: Story = {
+export const PrimaryButtonAndOnClick: Story = {
   args: {
     titleContent: 'Title here',
     image,
     alt: 'Alt to image',
     description: 'Description here',
-    onClick: undefined,
+    badges: {
+      content: 'New',
+      primary: true,
+      success: false,
+      warning: false,
+      error: false,
+      disabled: false
+    },
+    onClick: () => console.log('Your function here'),
     borderAnimation: false,
     primary: true,
     success: false,
@@ -50,28 +66,45 @@ export const Primary: Story = {
   }
 }
 
-export const Success: Story = {
+export const SuccessButtonAndOnClick: Story = {
   args: {
     titleContent: 'Title here',
     image,
     alt: 'Alt to image',
     description: 'Description here',
-    onClick: undefined,
+    badges: {
+      content: 'New',
+      primary: false,
+      success: true,
+      warning: false,
+      error: false,
+      disabled: false
+    },
+    onClick: () => console.log('Your function here'),
     borderAnimation: false,
     primary: false,
     success: true,
     warning: false,
-    error: false
+    error: false,
+    disabled: false
   }
 }
 
-export const Warning: Story = {
+export const WarningButtonAndOnClick: Story = {
   args: {
     titleContent: 'Title here',
     image,
     alt: 'Alt to image',
     description: 'Description here',
-    onClick: undefined,
+    badges: {
+      content: 'New',
+      primary: false,
+      success: false,
+      warning: true,
+      error: false,
+      disabled: false
+    },
+    onClick: () => console.log('Your function here'),
     borderAnimation: false,
     primary: false,
     success: false,
@@ -81,13 +114,21 @@ export const Warning: Story = {
   }
 }
 
-export const Error: Story = {
+export const ErrorButtonAndOnClick: Story = {
   args: {
     titleContent: 'Title here',
     image,
     alt: 'Alt to image',
     description: 'Description here',
-    onClick: undefined,
+    badges: {
+      content: 'New',
+      primary: false,
+      success: false,
+      warning: false,
+      error: true,
+      disabled: false
+    },
+    onClick: () => console.log('Your function here'),
     borderAnimation: false,
     primary: false,
     success: false,
@@ -97,13 +138,21 @@ export const Error: Story = {
   }
 }
 
-export const Disabled: Story = {
+export const DisabledButtonAndOnClick: Story = {
   args: {
     titleContent: 'Title here',
     image,
     alt: 'Alt to image',
     description: 'Description here',
-    onClick: undefined,
+    badges: {
+      content: 'New',
+      primary: false,
+      success: false,
+      warning: false,
+      error: false,
+      disabled: true
+    },
+    onClick: () => console.log('Your function here'),
     borderAnimation: false,
     primary: false,
     success: false,

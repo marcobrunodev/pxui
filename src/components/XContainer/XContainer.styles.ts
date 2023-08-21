@@ -193,7 +193,6 @@ const hasDisabled = ({ disabled, simple, borderAnimation, full }: Pick<XContaine
 }
 
 export const XContainer = styled.article<XContainerTypes>`
-  --border-width: 0.4rem;
   --size-border: 100%;
 
   position: relative;

@@ -1,4 +1,6 @@
 import { MouseEventHandler } from "react"
+import XButtonTypes from "../XButton/XButton.types"
+import XBadgesTypes from "../XBadges/XBadges.types"
 
 export type XCardTypes = {
   titleContent: string,
@@ -11,7 +13,9 @@ export type XCardTypes = {
   warning?: boolean,
   error?: boolean,
   disabled?: boolean,
-  onClick?: MouseEventHandler
+  onClick?: MouseEventHandler,
+  buttonProps?: XButtonTypes,
+  badges?: XBadgesTypes | boolean
 }
 
 export default XCardTypes

@@ -1,5 +1,17 @@
 import styled, { css } from 'styled-components'
-import ButtonTypes from './XButton.types'
+import ButtonTypes, { XButtonTypes } from './XButton.types'
+
+const hasFull = ({ full }: Pick<XButtonTypes, 'full'>) => full && css`
+  width: calc(100% - (var(--border-width) * 2));
+
+  &:active {
+    transform: translate(0.2rem) scale(0.9999);
+
+    &:after {
+      box-shadow: inset 0.5rem 0.5rem var(--box-shadow-color);
+    }
+  }
+`
 
 const hasPrimary = ({ primary = true }: Pick<ButtonTypes, 'primary'>) => primary && css`
   --bg-color: var(--color-primary);
@@ -12,7 +24,6 @@ const hasSuccess = ({ success = false }: Pick<ButtonTypes, 'success'>) => succes
   --bg-color: var(--color-success);
   --box-shadow-color: var(--color-success-shadow);
   --hover-bg-color: var(--color-success-dark);
-  --color: var(--color-black-light);
   --color-focus: var(--color-success-light);
 `
 
@@ -40,7 +51,7 @@ const hasDisabled = ({ disabled = false }: Pick<ButtonTypes, 'disabled'>) => dis
   color: var(--color-disabled-font);
   cursor: var(--cursor-default);
 
-  &:hover {
+  &:hover,  &:active {
     transform: none;
   }
 
@@ -80,7 +91,7 @@ const XButton = styled.button<ButtonTypes>`
   color: var(--color);
   background-color: var(--bg-color);
   border-style: solid;
-  border-width: 0.4rem;
+  border-width: var(--border-width);
   transition: 30ms transform ease-in-out, 100ms box-shadow ease-in-out;
 
   &:after {  
@@ -117,6 +128,7 @@ const XButton = styled.button<ButtonTypes>`
     outline: none;
   }
 
+  ${hasFull};
   ${hasPrimary};
   ${hasSuccess};
   ${hasWarning};

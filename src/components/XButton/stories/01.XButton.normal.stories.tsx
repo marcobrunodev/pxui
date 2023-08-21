@@ -1,13 +1,26 @@
 import { Meta, StoryObj } from '@storybook/react'
-import XButton from "."
+import XButton from ".."
 
 const meta: Meta<typeof XButton> = {
-  title: 'components/XButton',
+  title: 'components/XButton/01 - Normal',
   component: XButton
 }
 export default meta
 
 type Story = StoryObj<typeof XButton>
+
+export const Normal: Story = {
+  args: {
+    children: 'Login',
+    primary: false,
+    success: false,
+    warning: false,
+    error: false,
+    disabled: false,
+    full: false,
+    onClick: () => console.log('Your function here')
+  }
+}
 
 export const Primary: Story = {
   args: {
@@ -16,7 +29,9 @@ export const Primary: Story = {
     success: false,
     warning: false,
     error: false,
-    disabled: false
+    disabled: false,
+    full: false,
+    onClick: () => console.log('Your function here')
   }
 }
 
@@ -27,7 +42,9 @@ export const Success: Story = {
     success: true,
     warning: false,
     error: false,
-    disabled: false
+    disabled: false,
+    full: false,
+    onClick: () => console.log('Your function here')
   }
 }
 
@@ -38,7 +55,9 @@ export const Warning: Story = {
     success: false,
     warning: true,
     error: false,
-    disabled: false
+    disabled: false,
+    full: false,
+    onClick: () => console.log('Your function here')
   }
 }
 
@@ -49,7 +68,9 @@ export const Error: Story = {
     success: false,
     warning: false,
     error: true,
-    disabled: false
+    disabled: false,
+    full: false,
+    onClick: () => console.log('Your function here')
   }
 }
 
@@ -60,6 +81,8 @@ export const Disabled: Story = {
     success: false,
     warning: false,
     error: false,
-    disabled: true
+    disabled: true,
+    full: false,
+    onClick: () => console.log('Your function here')
   }
 }

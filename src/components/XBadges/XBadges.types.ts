@@ -1,7 +1,8 @@
-import { MouseEventHandler } from "react"
+import { MouseEventHandler, ReactNode } from "react"
 
-export type XButtonTypes = {
-  children: string,
+export type XBadgesTypes = {
+  content: string,
+  label?: ReactNode,
   primary?: boolean,
   success?: boolean,
   warning?: boolean,
@@ -11,4 +12,4 @@ export type XButtonTypes = {
   onClick?: MouseEventHandler
 }
 
-export default XButtonTypes
+export default XBadgesTypes
