@@ -1,4 +1,4 @@
-import XTextTypes from "./XText.type";
+import XTextTypes from "./XText.types";
 import S from './XText.styles'
 
 const XText = (props: XTextTypes) => (

@@ -15,7 +15,7 @@ export type XCardTypes = {
   disabled?: boolean,
   onClick?: MouseEventHandler,
   buttonProps?: XButtonTypes,
-  badges?: XBadgesTypes | boolean
+  badges?: XBadgesTypes
 }
 
 export default XCardTypes

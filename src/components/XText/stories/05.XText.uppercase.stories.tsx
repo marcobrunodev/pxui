@@ -1,15 +1,15 @@
 import { Meta, StoryObj } from "@storybook/react";
-import XText from ".";
+import XText from "..";
 
 const meta: Meta<typeof XText> = {
-  title: 'components/XText',
+  title: 'components/XText/05 - Uppercase',
   component: XText
 }
 export default meta
 
 type Story = StoryObj<typeof XText>
 
-export const Normal: Story = {
+export const Uppercase: Story = {
   args: {
     children: 'Paragraph here',
     primary: false,
@@ -20,11 +20,11 @@ export const Normal: Story = {
     big: false,
     bigger: false,
     center: false,
-    uppercase: false
+    uppercase: true
   }
 }
 
-export const Primary: Story = {
+export const PrimaryUppercase: Story = {
   args: {
     children: 'Paragraph here',
     primary: true,
@@ -35,11 +35,11 @@ export const Primary: Story = {
     big: false,
     bigger: false,
     center: false,
-    uppercase: false
+    uppercase: true
   }
 }
 
-export const Success: Story = {
+export const SuccessUppercase: Story = {
   args: {
     children: 'Paragraph here',
     primary: false,
@@ -50,11 +50,11 @@ export const Success: Story = {
     big: false,
     bigger: false,
     center: false,
-    uppercase: false
+    uppercase: true
   }
 }
 
-export const Warning: Story = {
+export const WarningUppercase: Story = {
   args: {
     children: 'Paragraph here',
     primary: false,
@@ -65,11 +65,11 @@ export const Warning: Story = {
     big: false,
     bigger: false,
     center: false,
-    uppercase: false
+    uppercase: true
   }
 }
 
-export const Error: Story = {
+export const ErrorUppercase: Story = {
   args: {
     children: 'Paragraph here',
     primary: false,
@@ -80,11 +80,11 @@ export const Error: Story = {
     big: false,
     bigger: false,
     center: false,
-    uppercase: false
+    uppercase: true
   }
 }
 
-export const Disabled: Story = {
+export const DisabledUppercase: Story = {
   args: {
     children: 'Paragraph here',
     primary: false,
@@ -92,66 +92,6 @@ export const Disabled: Story = {
     warning: false,
     error: false,
     disabled: true,
-    big: false,
-    bigger: false,
-    center: false,
-    uppercase: false
-  }
-}
-
-export const Big: Story = {
-  args: {
-    children: 'Paragraph here',
-    primary: false,
-    success: false,
-    warning: false,
-    error: false,
-    disabled: false,
-    big: true,
-    bigger: false,
-    center: false,
-    uppercase: false
-  }
-}
-
-export const Bigger: Story = {
-  args: {
-    children: 'Paragraph here',
-    primary: false,
-    success: false,
-    warning: false,
-    error: false,
-    disabled: false,
-    big: false,
-    bigger: true,
-    center: false,
-    uppercase: false
-  }
-}
-
-export const Center: Story = {
-  args: {
-    children: 'Paragraph here',
-    primary: false,
-    success: false,
-    warning: false,
-    error: false,
-    disabled: false,
-    big: false,
-    bigger: false,
-    center: true,
-    uppercase: false
-  }
-}
-
-export const Uppercase: Story = {
-  args: {
-    children: 'Paragraph here',
-    primary: false,
-    success: false,
-    warning: false,
-    error: false,
-    disabled: false,
     big: false,
     bigger: false,
     center: false,
