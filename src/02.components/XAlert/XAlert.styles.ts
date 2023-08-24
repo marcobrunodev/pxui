@@ -26,14 +26,20 @@ const hasOpen = ({ isOpen = false }: Pick<XAlertTypes, 'isOpen'>) => isOpen && c
   }
 `
 
-const hasError = ({ errorMessage = false }: Pick<XAlertTypes, 'errorMessage'>) => errorMessage && css`
+const hasError = ({ errorMessage }: Pick<XAlertTypes, 'errorMessage'>) => errorMessage && css`
   & ${Error} {
     opacity: 1;
     transform: translateY(calc(100% + var(--gap-small)));
   }
 `
 
-export const WrapperXAlert = styled.div<Pick<XAlertTypes, 'isOpen' | 'errorMessage'>>`
+const hasSimpleWrapper = ({ simple }: Pick<XAlertTypes, 'simple'>) => simple && css`
+  & ${Error} {
+    transform: translateY(calc(100% + var(--gap-medium)));
+  }
+`
+
+export const WrapperXAlert = styled.div<Pick<XAlertTypes, 'isOpen' | 'errorMessage' | 'simple'>>`
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -59,8 +65,14 @@ export const WrapperXAlert = styled.div<Pick<XAlertTypes, 'isOpen' | 'errorMessa
 
   ${hasOpen};
   ${hasError};
+  ${hasSimpleWrapper};
 `
 
+const hasSimple = ({ simple }: Pick<XAlertTypes, 'simple'>) => simple && css`
+  & > ${XClose} {
+    top: -2.4rem;
+  }
+`
 
 const XAlert = styled(XContainer)`
   position: relative;
@@ -91,7 +103,9 @@ const XAlert = styled(XContainer)`
       transition: transform 90ms ease-in-out;
       transform: scale(0.9);
     }
-}
+  }
+
+  ${hasSimple};
 `
 
 const S = {
