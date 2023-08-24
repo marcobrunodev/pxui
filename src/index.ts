@@ -1,5 +1,5 @@
 import XGlobalStyles from './XGlobalStyles'
-import XButton from "./components/XButton"
+import XButton from "./02.components/XButton"
 
 export {
   XGlobalStyles,
