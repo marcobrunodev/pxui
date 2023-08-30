@@ -1,9 +1,10 @@
 import { ReactNode } from 'react'
+import XTextTypes from '../XText/XText.types'
 
 export type XContainerTypes = {
   children: ReactNode,
   full?: boolean,
-  titleAttr?: string | boolean,
+  titleAttr?: XTextTypes,
   simple?: boolean,
   borderAnimation?: boolean,
   primary?: boolean,

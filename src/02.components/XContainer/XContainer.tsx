@@ -14,7 +14,7 @@ const XContainer = ({ full, simple, titleAttr, borderAnimation, children, primar
   <S.XContainer
     full={full}
     simple={simple}
-    titleAttr={!!titleAttr}
+    titleAttr={titleAttr}
     borderAnimation={borderAnimation}
     primary={primary}
     success={success}
@@ -22,7 +22,7 @@ const XContainer = ({ full, simple, titleAttr, borderAnimation, children, primar
     error={error}
     disabled={disabled}
   >
-    {titleAttr && <S.XTitle>{titleAttr}</S.XTitle>}
+    {titleAttr && <S.XTitle {...titleAttr} />}
     {children}
     {borderAnimation && !full && <BorderAnimation />}
   </S.XContainer>

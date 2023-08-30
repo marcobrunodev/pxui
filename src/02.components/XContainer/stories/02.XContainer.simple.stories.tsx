@@ -13,7 +13,9 @@ export const Simple: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
-    titleAttr: '',
+    titleAttr: {
+      children: ''
+    },
     simple: true,
     borderAnimation: false,
     primary: false,
@@ -28,7 +30,9 @@ export const PrimarySimple: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
-    titleAttr: '',
+    titleAttr: {
+      children: ''
+    },
     simple: true,
     borderAnimation: false,
     primary: true,
@@ -43,7 +47,9 @@ export const SuccessSimple: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
-    titleAttr: '',
+    titleAttr: {
+      children: ''
+    },
     simple: true,
     borderAnimation: false,
     primary: false,
@@ -58,7 +64,9 @@ export const WarningSimple: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
-    titleAttr: '',
+    titleAttr: {
+      children: ''
+    },
     simple: true,
     borderAnimation: false,
     primary: false,
@@ -73,7 +81,9 @@ export const ErrorSimple: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
-    titleAttr: '',
+    titleAttr: {
+      children: ''
+    },
     simple: true,
     borderAnimation: false,
     primary: false,
@@ -88,7 +98,9 @@ export const DisabledSimple: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
-    titleAttr: '',
+    titleAttr: {
+      children: ''
+    },
     simple: true,
     borderAnimation: false,
     primary: false,

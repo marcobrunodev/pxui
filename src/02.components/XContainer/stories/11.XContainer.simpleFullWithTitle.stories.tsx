@@ -2,18 +2,20 @@ import { Meta, StoryObj } from "@storybook/react";
 import XContainer from "..";
 
 const meta: Meta<typeof XContainer> = {
-  title: '02 - components/XContainer/07 - Simple Full',
+  title: '02 - components/XContainer/11 - Simple Full With Title',
   component: XContainer
 }
 export default meta
 
 type Story = StoryObj<typeof XContainer>
 
-export const SimpleFull: Story = {
+export const SimpleFullWithTitle: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: true,
-    titleAttr: '',
+    titleAttr: {
+      children: 'Title here'
+    },
     simple: true,
     borderAnimation: false,
     primary: false,
@@ -24,11 +26,13 @@ export const SimpleFull: Story = {
   }
 }
 
-export const PrimarySimpleFull: Story = {
+export const PrimarySimpleFullWithTitle: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: true,
-    titleAttr: '',
+    titleAttr: {
+      children: 'Title here'
+    },
     simple: true,
     borderAnimation: false,
     primary: true,
@@ -39,11 +43,13 @@ export const PrimarySimpleFull: Story = {
   }
 }
 
-export const SuccessSimpleFull: Story = {
+export const SuccessSimpleFullWithTitle: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: true,
-    titleAttr: '',
+    titleAttr: {
+      children: 'Title here'
+    },
     simple: true,
     borderAnimation: false,
     primary: false,
@@ -54,11 +60,13 @@ export const SuccessSimpleFull: Story = {
   }
 }
 
-export const WarningSimpleFull: Story = {
+export const WarningSimpleFullWithTitle: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: true,
-    titleAttr: '',
+    titleAttr: {
+      children: 'Title here'
+    },
     simple: true,
     borderAnimation: false,
     primary: false,
@@ -69,11 +77,13 @@ export const WarningSimpleFull: Story = {
   }
 }
 
-export const ErrorSimpleFull: Story = {
+export const ErrorSimpleFullWithTitle: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: true,
-    titleAttr: '',
+    titleAttr: {
+      children: 'Title here'
+    },
     simple: true,
     borderAnimation: false,
     primary: false,
@@ -84,11 +94,13 @@ export const ErrorSimpleFull: Story = {
   }
 }
 
-export const DisabledSimpleFull: Story = {
+export const DisabledSimpleFullWithTitle: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: true,
-    titleAttr: '',
+    titleAttr: {
+      children: 'Title here'
+    },
     simple: true,
     borderAnimation: false,
     primary: false,

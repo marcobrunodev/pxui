@@ -2,20 +2,23 @@ import { Meta, StoryObj } from "@storybook/react";
 import XContainer from "..";
 
 const meta: Meta<typeof XContainer> = {
-  title: '02 - components/XContainer/09 - Border-Animation',
+  title: '02 - components/XContainer/07 - Full With Title Center',
   component: XContainer
 }
 export default meta
 
 type Story = StoryObj<typeof XContainer>
 
-export const BorderAnimation: Story = {
+export const FullWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
-    full: false,
-    titleAttr: '',
-    simple: true,
-    borderAnimation: true,
+    full: true,
+    titleAttr: {
+      children: 'Title here',
+      center: true
+    },
+    simple: false,
+    borderAnimation: false,
     primary: false,
     success: false,
     warning: false,
@@ -24,13 +27,16 @@ export const BorderAnimation: Story = {
   }
 }
 
-export const PrimaryBorderAnimation: Story = {
+export const PrimaryFullWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
-    full: false,
-    titleAttr: '',
-    simple: true,
-    borderAnimation: true,
+    full: true,
+    titleAttr: {
+      children: 'Title here',
+      center: true
+    },
+    simple: false,
+    borderAnimation: false,
     primary: true,
     success: false,
     warning: false,
@@ -39,13 +45,16 @@ export const PrimaryBorderAnimation: Story = {
   }
 }
 
-export const SuccessBorderAnimation: Story = {
+export const SuccessFullWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
-    full: false,
-    titleAttr: '',
-    simple: true,
-    borderAnimation: true,
+    full: true,
+    titleAttr: {
+      children: 'Title here',
+      center: true
+    },
+    simple: false,
+    borderAnimation: false,
     primary: false,
     success: true,
     warning: false,
@@ -54,13 +63,16 @@ export const SuccessBorderAnimation: Story = {
   }
 }
 
-export const WarningBorderAnimation: Story = {
+export const WarningFullWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
-    full: false,
-    titleAttr: '',
-    simple: true,
-    borderAnimation: true,
+    full: true,
+    titleAttr: {
+      children: 'Title here',
+      center: true
+    },
+    simple: false,
+    borderAnimation: false,
     primary: false,
     success: false,
     warning: true,
@@ -69,13 +81,16 @@ export const WarningBorderAnimation: Story = {
   }
 }
 
-export const ErrorBorderAnimation: Story = {
+export const ErrorFullWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
-    full: false,
-    titleAttr: '',
-    simple: true,
-    borderAnimation: true,
+    full: true,
+    titleAttr: {
+      children: 'Title here',
+      center: true
+    },
+    simple: false,
+    borderAnimation: false,
     primary: false,
     success: false,
     warning: false,
@@ -84,13 +99,16 @@ export const ErrorBorderAnimation: Story = {
   }
 }
 
-export const DisabledBorderAnimation: Story = {
+export const DisabledFullWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
-    full: false,
-    titleAttr: '',
-    simple: true,
-    borderAnimation: true,
+    full: true,
+    titleAttr: {
+      children: 'Title here',
+      center: true
+    },
+    simple: false,
+    borderAnimation: false,
     primary: false,
     success: false,
     warning: false,

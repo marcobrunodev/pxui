@@ -2,18 +2,21 @@ import { Meta, StoryObj } from "@storybook/react";
 import XContainer from "..";
 
 const meta: Meta<typeof XContainer> = {
-  title: '02 - components/XContainer/06 - With Title',
+  title: '02 - components/XContainer/09 - With Title and center',
   component: XContainer
 }
 export default meta
 
 type Story = StoryObj<typeof XContainer>
 
-export const WithTitle: Story = {
+export const WithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
-    titleAttr: 'Title here',
+    titleAttr: {
+      children: 'Title here',
+      center: true
+    },
     simple: false,
     borderAnimation: false,
     primary: false,
@@ -24,11 +27,14 @@ export const WithTitle: Story = {
   }
 }
 
-export const PrimaryWithTitle: Story = {
+export const PrimaryWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
-    titleAttr: 'Title here',
+    titleAttr: {
+      children: 'Title here',
+      center: true
+    },
     simple: false,
     borderAnimation: false,
     primary: true,
@@ -39,11 +45,14 @@ export const PrimaryWithTitle: Story = {
   }
 }
 
-export const SuccessWithTitle: Story = {
+export const SuccessWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
-    titleAttr: 'Title here',
+    titleAttr: {
+      children: 'Title here',
+      center: true
+    },
     simple: false,
     borderAnimation: false,
     primary: false,
@@ -54,11 +63,14 @@ export const SuccessWithTitle: Story = {
   }
 }
 
-export const WarningWithTitle: Story = {
+export const WarningWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
-    titleAttr: 'Title here',
+    titleAttr: {
+      children: 'Title here',
+      center: true
+    },
     simple: false,
     borderAnimation: false,
     primary: false,
@@ -69,11 +81,14 @@ export const WarningWithTitle: Story = {
   }
 }
 
-export const ErrorWithTitle: Story = {
+export const ErrorWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
-    titleAttr: 'Title here',
+    titleAttr: {
+      children: 'Title here',
+      center: true
+    },
     simple: false,
     borderAnimation: false,
     primary: false,
@@ -84,11 +99,14 @@ export const ErrorWithTitle: Story = {
   }
 }
 
-export const DisabledWithTitle: Story = {
+export const DisabledWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
-    titleAttr: 'Title here',
+    titleAttr: {
+      children: 'Title here',
+      center: true
+    },
     simple: false,
     borderAnimation: false,
     primary: false,

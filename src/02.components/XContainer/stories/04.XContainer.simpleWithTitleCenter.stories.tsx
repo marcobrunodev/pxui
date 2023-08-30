@@ -2,14 +2,14 @@ import { Meta, StoryObj } from "@storybook/react";
 import XContainer from "..";
 
 const meta: Meta<typeof XContainer> = {
-  title: '02 - components/XContainer/03 - Simple With Title',
+  title: '02 - components/XContainer/04 - Simple With Title Center',
   component: XContainer
 }
 export default meta
 
 type Story = StoryObj<typeof XContainer>
 
-export const SimpleWithTitle: Story = {
+export const SimpleWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
@@ -26,7 +26,7 @@ export const SimpleWithTitle: Story = {
   }
 }
 
-export const PrimarySimpleWithTitle: Story = {
+export const PrimarySimpleWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
@@ -43,7 +43,7 @@ export const PrimarySimpleWithTitle: Story = {
   }
 }
 
-export const SuccessSimpleWithTitle: Story = {
+export const SuccessSimpleWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
@@ -60,7 +60,7 @@ export const SuccessSimpleWithTitle: Story = {
   }
 }
 
-export const WarningSimpleWithTitle: Story = {
+export const WarningSimpleWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
@@ -77,7 +77,7 @@ export const WarningSimpleWithTitle: Story = {
   }
 }
 
-export const ErrorSimpleWithTitle: Story = {
+export const ErrorSimpleWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,
@@ -94,7 +94,7 @@ export const ErrorSimpleWithTitle: Story = {
   }
 }
 
-export const DisableSimpleWithTitle: Story = {
+export const DisableSimpleWithTitleCenter: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: false,

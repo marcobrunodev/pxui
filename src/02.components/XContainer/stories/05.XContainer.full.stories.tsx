@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import XContainer from "..";
 
 const meta: Meta<typeof XContainer> = {
-  title: '02 - components/XContainer/04 - Full',
+  title: '02 - components/XContainer/05 - Full',
   component: XContainer
 }
 export default meta
@@ -13,7 +13,9 @@ export const Full: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: true,
-    titleAttr: '',
+    titleAttr: {
+      children: ''
+    },
     simple: false,
     borderAnimation: false,
     primary: false,
@@ -28,7 +30,9 @@ export const PrimaryFull: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: true,
-    titleAttr: '',
+    titleAttr: {
+      children: ''
+    },
     simple: false,
     borderAnimation: false,
     primary: true,
@@ -43,7 +47,9 @@ export const SuccessFull: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: true,
-    titleAttr: '',
+    titleAttr: {
+      children: ''
+    },
     simple: false,
     borderAnimation: false,
     primary: false,
@@ -58,7 +64,9 @@ export const WarningFull: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: true,
-    titleAttr: '',
+    titleAttr: {
+      children: ''
+    },
     simple: false,
     borderAnimation: false,
     primary: false,
@@ -73,7 +81,9 @@ export const ErrorFull: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: true,
-    titleAttr: '',
+    titleAttr: {
+      children: ''
+    },
     simple: false,
     borderAnimation: false,
     primary: false,
@@ -88,7 +98,9 @@ export const DisabledFull: Story = {
   args: {
     children: 'Your text or component(s) here',
     full: true,
-    titleAttr: '',
+    titleAttr: {
+      children: ''
+    },
     simple: false,
     borderAnimation: false,
     primary: false,

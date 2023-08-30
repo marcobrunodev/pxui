@@ -1,6 +1,7 @@
 import styled, { keyframes, css } from 'styled-components'
 import XContainerTypes from './XContainer.types'
 import XText from '../XText'
+import XTextTypes from '../XText/XText.types'
 
 const top = keyframes`
   from {
@@ -82,6 +83,12 @@ const XLeft = styled.span`
   animation: 3s 4.5s ${left} linear infinite;
 `
 
+const hasCenter = ({ center }: Pick<XTextTypes, 'center'>) => center && css`
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 0;
+`
+
 const XTitle = styled(XText).attrs({ as: 'h2' })`
   position: absolute;
   margin-bottom: var(--gap-small);
@@ -89,6 +96,8 @@ const XTitle = styled(XText).attrs({ as: 'h2' })`
   background-color: var(--color-black);
   padding:  0 var(--gap-medium);
   font-size: 2rem;
+
+  ${hasCenter};
 `
 
 const hasFull = ({ full }: Pick<XContainerTypes, 'full'>) => full && css`
