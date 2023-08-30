@@ -1,4 +1,4 @@
-import XFlagsTypes from './XFlags.types'
+import XFlagsTypes, { whatFlags } from './XFlags.types'
 import S from './XFlags.styles'
 import XTheUnitedKingdomFlag from '../XTheUnitedKingdomFlag'
 import XBrazilFlag from '../XBrazilFlag'
@@ -9,7 +9,7 @@ const flags = {
 }
 
 const XFlags = (props: XFlagsTypes) => {
-  const flagTrue = Object.keys(props).filter(key => props[key as keyof XFlagsTypes] === true)
+  const flagTrue: whatFlags[] = Object.keys(props).filter(key => props[key as keyof XFlagsTypes] === true) as whatFlags[]
   console.log('flagsTrue', flagTrue)
 
   return (
