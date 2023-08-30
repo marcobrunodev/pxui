@@ -1,0 +1,11 @@
+import { Meta, StoryObj } from "@storybook/react";
+import XText from "..";
+declare const meta: Meta<typeof XText>;
+export default meta;
+type Story = StoryObj<typeof XText>;
+export declare const Center: Story;
+export declare const PrimaryCenter: Story;
+export declare const SuccessCenter: Story;
+export declare const WarningCenter: Story;
+export declare const ErrorCenter: Story;
+export declare const DisabledCenter: Story;
