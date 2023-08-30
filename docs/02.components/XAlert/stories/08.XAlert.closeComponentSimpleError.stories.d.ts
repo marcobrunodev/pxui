@@ -1,0 +1,11 @@
+import { Meta, StoryObj } from '@storybook/react';
+import XAlert from '..';
+declare const meta: Meta<typeof XAlert>;
+export default meta;
+type Story = StoryObj<typeof XAlert>;
+export declare const CloseIconComponentSimpleError: Story;
+export declare const PrimaryCloseComponentSimple: Story;
+export declare const SuccessCloseComponentSimple: Story;
+export declare const WarningCloseComponentSimple: Story;
+export declare const ErrorCloseComponentSimple: Story;
+export declare const DisableWithoutClosed: Story;

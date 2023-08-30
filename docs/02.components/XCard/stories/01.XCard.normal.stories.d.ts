@@ -1,0 +1,11 @@
+import { Meta, StoryObj } from '@storybook/react';
+import XCard from '..';
+declare const meta: Meta<typeof XCard>;
+export default meta;
+type Story = StoryObj<typeof XCard>;
+export declare const Normal: Story;
+export declare const Primary: Story;
+export declare const Success: Story;
+export declare const Warning: Story;
+export declare const Error: Story;
+export declare const Disabled: Story;

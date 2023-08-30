@@ -1,0 +1,11 @@
+import { Meta, StoryObj } from '@storybook/react';
+import XAlert from '..';
+declare const meta: Meta<typeof XAlert>;
+export default meta;
+type Story = StoryObj<typeof XAlert>;
+export declare const WithAComponentInChildren: Story;
+export declare const PrimaryAComponentInChildren: Story;
+export declare const SuccessAComponentInChildren: Story;
+export declare const WarningAComponentInChildren: Story;
+export declare const ErrorComponentInChildren: Story;
+export declare const DisabledAComponentInChildren: Story;
