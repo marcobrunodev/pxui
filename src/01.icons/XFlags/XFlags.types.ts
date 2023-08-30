@@ -3,6 +3,6 @@ export type XFlagsTypes = {
   uk?: boolean
 }
 
-export type whatFlags = 'br' | 'uk'
+export type whatFlags = 'br' | 'uk' | 'es'
 
 export default XFlagsTypes
