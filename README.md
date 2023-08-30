@@ -1,7 +1,9 @@
 # PXUI
 
-> Lib UI with React in Pixel Art
+> Lib UI with React in Pixel Art based on [NESCSS](https://nostalgic-css.github.io/NES.css)
 
+# Documentation
+Documentation here: [https://marcobrunodev.github.io/pxui](https://marcobrunodev.github.io/pxui)
 # Get started
 
 ## npm
