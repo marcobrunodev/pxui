@@ -4,7 +4,7 @@ export default create({
   fontBase: '"Silkscreen", monospace',
   base: 'dark',
   brandTitle: 'UI w3b3.gg',
-  brandUrl: 'http://localhost:6006',
-  brandImage: 'http://localhost:6006/logo-storybook.png',
+  brandUrl: 'https://marcobrunodev.github.io/pxui',
+  brandImage: 'https://marcobrunodev.github.io/pxui/pxui.png',
   brandTarget: '_self'
 })
