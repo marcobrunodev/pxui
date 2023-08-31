@@ -1,4 +1,4 @@
-import{X}from"./XLine-e3f474a8.js";import"./styled-components.browser.esm-f3162c9c.js";import"./index-c4905b50.js";import"./_commonjsHelpers-042e6b4d.js";const _={title:"02 - components/XLine/02 - With Margin",component:X},r={args:{primary:!1,success:!1,warning:!1,error:!1,disabled:!1,margin:!0}},a={args:{primary:!0,success:!1,warning:!1,error:!1,disabled:!1,margin:!0}},e={args:{primary:!1,success:!0,warning:!1,error:!1,disabled:!1,margin:!0}},s={args:{primary:!1,success:!1,warning:!0,error:!1,disabled:!1,margin:!0}},n={args:{primary:!1,success:!1,warning:!1,error:!0,disabled:!1,margin:!0}},i={args:{primary:!1,success:!1,warning:!1,error:!1,disabled:!0,margin:!0}};var o,c,l;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`{
+import{X}from"./XLine-60ccb06b.js";import"./styled-components.browser.esm-f3162c9c.js";import"./index-c4905b50.js";import"./_commonjsHelpers-042e6b4d.js";const _={title:"02 - components/XLine/02 - With Margin",component:X},r={args:{primary:!1,success:!1,warning:!1,error:!1,disabled:!1,margin:!0}},a={args:{primary:!0,success:!1,warning:!1,error:!1,disabled:!1,margin:!0}},e={args:{primary:!1,success:!0,warning:!1,error:!1,disabled:!1,margin:!0}},s={args:{primary:!1,success:!1,warning:!0,error:!1,disabled:!1,margin:!0}},n={args:{primary:!1,success:!1,warning:!1,error:!0,disabled:!1,margin:!0}},i={args:{primary:!1,success:!1,warning:!1,error:!1,disabled:!0,margin:!0}};var o,c,l;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`{
   args: {
     primary: false,
     success: false,
@@ -53,4 +53,4 @@ import{X}from"./XLine-e3f474a8.js";import"./styled-components.browser.esm-f3162c
     margin: true
   }
 }`,...(E=(h=i.parameters)==null?void 0:h.docs)==null?void 0:E.source}}};const O=["WithMargin","PrimaryMargin","SuccessMargin","WarningMargin","ErrorMargin","DisabledMargin"];export{i as DisabledMargin,n as ErrorMargin,a as PrimaryMargin,e as SuccessMargin,s as WarningMargin,r as WithMargin,O as __namedExportsOrder,_ as default};
-//# sourceMappingURL=02.XLine.withMargin.stories-139235f3.js.map
+//# sourceMappingURL=02.XLine.withMargin.stories-69706cb1.js.map
