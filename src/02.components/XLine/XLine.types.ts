@@ -1,5 +1,5 @@
 export type XLineTypes = {
-  margin: boolean,
+  margin?: boolean,
   primary?: boolean,
   success?: boolean,
   warning?: boolean,
