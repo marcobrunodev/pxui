@@ -53,7 +53,7 @@ const hasSimple = ({ simple }: Pick<XInputTypes, 'simple'>) => simple && css`
   border-color: var(--color-white);
 `
 
-const XInput = styled.input<XInputTypes>`
+export const XInput = styled.input<XInputTypes>`
   background-color: transparent;
   border-image-slice: 2;
   border-image-width: 2;
@@ -71,7 +71,6 @@ const XInput = styled.input<XInputTypes>`
 
   &:focus {
     outline: none;
-    transform: scale(1.02);
   }
   
   ${hasSimple};

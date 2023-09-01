@@ -38,7 +38,7 @@ const hasUppercase = ({ uppercase = false }: Pick<XTextTypes, 'uppercase'>) => u
   letter-spacing: 0.1em;
 `
 
-const XText = styled.p<XTextTypes>`
+export const XText = styled.p<XTextTypes>`
   ${hasPrimary};
   ${hasSuccess};
   ${hasWarning};

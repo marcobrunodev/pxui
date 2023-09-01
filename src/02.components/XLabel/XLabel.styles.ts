@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import XText from '../XText'
+import { XText } from '../XText/XText.styles'
 
-const XLabel = styled(XText)`
+export const XLabel = styled(XText)`
   font-size: 1.7rem;
 `
 
