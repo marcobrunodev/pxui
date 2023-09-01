@@ -7,7 +7,6 @@ export type XBadgesTypes = {
     warning?: boolean;
     error?: boolean;
     disabled?: boolean;
-    full?: boolean;
     onClick?: MouseEventHandler;
 };
 export default XBadgesTypes;

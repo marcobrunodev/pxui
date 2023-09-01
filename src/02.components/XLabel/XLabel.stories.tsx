@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import XLabel from '.'
 
 const meta: Meta<typeof XLabel> = {
-  title: '02 - components/XLabel',
+  title: '02.1 - Form Components/XLabel',
   component: XLabel
 }
 export default meta

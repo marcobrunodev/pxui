@@ -9,21 +9,17 @@ export default meta
 
 type Story = StoryObj<typeof XArrow>
 
-export const Right: Story = {
-  args: {
-    right: true,
-    down: false,
-    left: false,
-    up: false
-  }
-}
-
 export const Down: Story = {
   args: {
     right: false,
     down: true,
     left: false,
-    up: false
+    up: false,
+    primary: false,
+    success: false,
+    warning: false,
+    error: false,
+    disabled: false,
   }
 }
 
@@ -32,7 +28,12 @@ export const Left: Story = {
     right: false,
     down: false,
     left: true,
-    up: false
+    up: false,
+    primary: false,
+    success: false,
+    warning: false,
+    error: false,
+    disabled: false,
   }
 }
 
@@ -41,6 +42,11 @@ export const Up: Story = {
     right: false,
     down: false,
     left: false,
-    up: true
+    up: true,
+    primary: false,
+    success: false,
+    warning: false,
+    error: false,
+    disabled: false,
   }
 }

@@ -285,6 +285,11 @@ export declare const XArrow: import("styled-components").IStyledComponent<"web",
     down?: boolean | undefined;
     left?: boolean | undefined;
     up?: boolean | undefined;
+    primary?: boolean | undefined;
+    success?: boolean | undefined;
+    warning?: boolean | undefined;
+    error?: boolean | undefined;
+    disabled?: boolean | undefined;
 }>;
 declare const S: {
     XArrow: import("styled-components").IStyledComponent<"web", {
@@ -573,6 +578,11 @@ declare const S: {
         down?: boolean | undefined;
         left?: boolean | undefined;
         up?: boolean | undefined;
+        primary?: boolean | undefined;
+        success?: boolean | undefined;
+        warning?: boolean | undefined;
+        error?: boolean | undefined;
+        disabled?: boolean | undefined;
     }>;
 };
 export default S;

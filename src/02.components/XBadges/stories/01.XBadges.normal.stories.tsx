@@ -16,7 +16,8 @@ export const Normal: Story = {
     success: false,
     warning: false,
     error: false,
-    disabled: false
+    disabled: false,
+    label: ''
   }
 }
 
@@ -27,7 +28,8 @@ export const Primary: Story = {
     success: false,
     warning: false,
     error: false,
-    disabled: false
+    disabled: false,
+    label: ''
   }
 }
 
@@ -38,7 +40,8 @@ export const Success: Story = {
     success: true,
     warning: false,
     error: false,
-    disabled: false
+    disabled: false,
+    label: ''
   }
 }
 
@@ -49,7 +52,8 @@ export const Warning: Story = {
     success: false,
     warning: true,
     error: false,
-    disabled: false
+    disabled: false,
+    label: ''
   }
 }
 
@@ -60,7 +64,8 @@ export const Error: Story = {
     success: false,
     warning: false,
     error: true,
-    disabled: false
+    disabled: false,
+    label: ''
   }
 }
 
@@ -71,6 +76,7 @@ export const Disabled: Story = {
     success: false,
     warning: false,
     error: false,
-    disabled: true
+    disabled: true,
+    label: ''
   }
 }

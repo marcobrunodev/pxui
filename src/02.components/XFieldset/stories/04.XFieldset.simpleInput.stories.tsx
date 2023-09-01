@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import XFieldset from '..'
 
 const meta: Meta<typeof XFieldset> = {
-  title: '02 - components/XFieldset/04 - Simple Input',
+  title: '02.1 - Form Components/XFieldset/04 - Simple Input',
   component: XFieldset
 }
 export default meta

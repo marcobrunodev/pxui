@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import XInput from '..'
 
 const meta: Meta<typeof XInput> = {
-  title: '02 - components/XInput/01 - Normal',
+  title: '02.1 - Form Components/XInput/01 - Normal',
   component: XInput
 }
 export default meta

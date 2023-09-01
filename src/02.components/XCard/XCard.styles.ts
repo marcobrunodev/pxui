@@ -4,7 +4,6 @@ import XText from '../XText'
 import XCardTypes from './XCard.types'
 import { XBadges } from '../XBadges/XBadges.styles'
 
-
 const Image = styled.img`
   width: 100%;
 `
