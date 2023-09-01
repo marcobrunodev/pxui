@@ -66,6 +66,8 @@ const XInput = styled.input<XInputTypes>`
   color: var(--colo-white);
   padding: var(--gap-small);
   transition: 100ms transform ease-in-out;
+  box-sizing: border-box;
+  width: 100%;
 
   &:focus {
     outline: none;
