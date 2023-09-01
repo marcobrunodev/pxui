@@ -68,12 +68,6 @@ export const WrapperXAlert = styled.div<Pick<XAlertTypes, 'isOpen' | 'errorMessa
   ${hasSimpleWrapper};
 `
 
-const hasSimple = ({ simple }: Pick<XAlertTypes, 'simple'>) => simple && css`
-  & > ${XClose} {
-    top: -2.4rem;
-  }
-`
-
 const XAlert = styled(XContainer)`
   position: relative;
   display: flex;
@@ -89,11 +83,11 @@ const XAlert = styled(XContainer)`
 
   & > ${XClose} {
     position: absolute;
-    top: -2rem;
-    right: -2rem;
+    top: -1.85rem;
+    right: -1.84rem;
     cursor: var(--cursor-pointer);
-    height: 4.5rem;
-    transition: transform 120ms ease-in-out;
+    height: 3.4rem;
+    transition: transform 80ms ease-in-out;
 
     &:hover {
       transform: scale(1.1);
@@ -101,11 +95,9 @@ const XAlert = styled(XContainer)`
 
     &:active {
       transition: transform 90ms ease-in-out;
-      transform: scale(0.9);
+      transform: scale(0.98);
     }
   }
-
-  ${hasSimple};
 `
 
 const S = {
