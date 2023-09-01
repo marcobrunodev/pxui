@@ -41,6 +41,8 @@ import{s,n as o,j as i}from"./styled-components.browser.esm-f3162c9c.js";const l
   color: var(--colo-white);
   padding: var(--gap-small);
   transition: 100ms transform ease-in-out;
+  box-sizing: border-box;
+  width: 100%;
 
   &:focus {
     outline: none;
@@ -54,4 +56,4 @@ import{s,n as o,j as i}from"./styled-components.browser.esm-f3162c9c.js";const l
   ${n};
   ${l};
 `,b={XInput:m},a=r=>i.jsx(b.XInput,{...r});try{a.displayName="XInput",a.__docgenInfo={description:"",displayName:"XInput",props:{simple:{defaultValue:null,description:"",name:"simple",required:!1,type:{name:"boolean"}},primary:{defaultValue:null,description:"",name:"primary",required:!1,type:{name:"boolean"}},success:{defaultValue:null,description:"",name:"success",required:!1,type:{name:"boolean"}},warning:{defaultValue:null,description:"",name:"warning",required:!1,type:{name:"boolean"}},error:{defaultValue:null,description:"",name:"error",required:!1,type:{name:"boolean"}},disabled:{defaultValue:null,description:"",name:"disabled",required:!1,type:{name:"boolean"}}}}}catch{}export{a as X};
-//# sourceMappingURL=XInput-4d4fc59c.js.map
+//# sourceMappingURL=XInput-fadadb55.js.map
