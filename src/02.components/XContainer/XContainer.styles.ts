@@ -210,7 +210,7 @@ export const XContainer = styled.article<XContainerTypes>`
   border-image-width: 3;
   border-image-repeat: stretch;
   border-image-source: var(--border-image-source-white);
-  border-image-outset: 0;
+  border-image-outset: 1;
   border-style: solid;
   border-width: var(--border-width);
   padding: var(--gap-medium) var(--gap-big);

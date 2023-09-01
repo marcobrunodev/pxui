@@ -47,7 +47,6 @@ const hasDisabled = ({ disabled = false }: Pick<ButtonTypes, 'disabled'>) => dis
   --box-shadow-color: var(--color-disabled-shadow);
   --hover-bg-color: var(--color-disabled);
 
-  border-image-source: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="5" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z" fill="rgb(121, 123, 126)" /></svg>');
   color: var(--color-disabled-font);
   cursor: var(--cursor-default);
 
@@ -56,7 +55,7 @@ const hasDisabled = ({ disabled = false }: Pick<ButtonTypes, 'disabled'>) => dis
   }
 
   &:after, &:hover:after {
-    box-shadow: inset -0.6rem -0.6rem var(--box-shadow-color);
+    box-shadow: inset -0.3rem -0.3rem var(--box-shadow-color);
   }
 `
 
@@ -70,8 +69,10 @@ const XButton = styled.button<ButtonTypes>`
   border-image-slice: 2;
   border-image-width: 2;
   border-image-repeat: stretch;
-  border-image-source: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="5" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z" fill="rgb(255,255,255)" /></svg>');
+  border-image-source: var(--simple-border-image-source-white);
   border-image-outset: 2;
+  border-style: solid;
+  border-width: var(--border-width);
   position: relative;
   display: inline-block;
   padding: 0.6rem 1rem 1.2rem;
@@ -90,18 +91,16 @@ const XButton = styled.button<ButtonTypes>`
   user-select: none;
   color: var(--color);
   background-color: var(--bg-color);
-  border-style: solid;
-  border-width: var(--border-width);
   transition: 30ms transform ease-in-out, 100ms box-shadow ease-in-out;
 
   &:after {  
     position: absolute;
-    top: -0.4rem;
-    right: -0.4rem;
-    bottom: -0.4rem;
-    left: -0.4rem;
+    top: -0.3rem;
+    right: -0.3rem;
+    bottom: -0.3rem;
+    left: -0.3rem;
     content: "";
-    box-shadow: inset -0.4rem -0.4rem var(--box-shadow-color);
+    box-shadow: inset -0.2rem -0.2rem var(--box-shadow-color);
     transition: 30ms box-shadow ease-in-out;
   }
 
@@ -111,7 +110,7 @@ const XButton = styled.button<ButtonTypes>`
     transform: translate(-0.2rem);
 
     &:after {
-      box-shadow: inset -0.6rem -0.6rem var(--box-shadow-color);
+      box-shadow: inset -0.3rem -0.3rem var(--box-shadow-color);
     }
   }
 
@@ -119,7 +118,7 @@ const XButton = styled.button<ButtonTypes>`
     transform: translate(0.2rem) scale(0.98);
 
     &:after {
-      box-shadow: inset 0.5rem 0.5rem var(--box-shadow-color);
+      box-shadow: inset 0.3rem 0.3rem var(--box-shadow-color);
     }
   }
 

@@ -46,7 +46,7 @@ export const XBallon = styled(XContainer)`
   }
 
   &::before {
-    bottom: -0.6rem;
+    bottom: -1rem;
     width: 1.8rem;
     height: 1rem;
     border-right: var(--border-width) solid var(--border-color);
@@ -54,7 +54,7 @@ export const XBallon = styled(XContainer)`
   }
 
   &::after {
-    bottom: -1rem;
+    bottom: -1.3rem;
     width: 1.8rem;
     height: var(--border-width);
     color: var(--border-color);

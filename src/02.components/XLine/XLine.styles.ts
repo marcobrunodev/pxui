@@ -28,7 +28,7 @@ const hasMargin = ({ margin }: XLineTypes) => margin && css`
 
 const XLine = styled.hr<XLineTypes>`
   width: 100%;
-  height: 0.3rem;
+  height: var(--border-width);
   margin: 0;
   border: none;
   background-color: var(--color-white);
