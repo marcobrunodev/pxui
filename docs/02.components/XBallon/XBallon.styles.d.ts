@@ -1,5 +1,4 @@
 /// <reference types="react" />
-/// <reference types="react" />
 export declare const XBallon: import("styled-components").IStyledComponent<"web", {
     color?: string | undefined;
     content?: string | undefined;

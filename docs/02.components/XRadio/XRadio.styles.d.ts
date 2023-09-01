@@ -1,5 +1,4 @@
 /// <reference types="react" />
-/// <reference types="react" />
 import XRadioTypes from './XRadio.types.ts';
 declare const _default: {
     XRadio: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").Substitute<import("react").DetailedHTMLProps<import("react").LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>, Pick<XRadioTypes, "onClick">>>;

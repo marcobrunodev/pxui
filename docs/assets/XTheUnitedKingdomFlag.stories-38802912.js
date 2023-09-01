@@ -1,0 +1,2 @@
+import{X as a}from"./XTheUnitedKingdomFlag-6c7a7ab2.js";import"./styled-components.browser.esm-18f716b2.js";import"./index-8db94870.js";import"./_commonjsHelpers-042e6b4d.js";const i={title:"01 - Icons/XTheUnitedKingdomFlag",component:a},o={};var r,e,t;o.parameters={...o.parameters,docs:{...(r=o.parameters)==null?void 0:r.docs,source:{originalSource:"{}",...(t=(e=o.parameters)==null?void 0:e.docs)==null?void 0:t.source}}};const p=["Normal"];export{o as Normal,p as __namedExportsOrder,i as default};
+//# sourceMappingURL=XTheUnitedKingdomFlag.stories-38802912.js.map

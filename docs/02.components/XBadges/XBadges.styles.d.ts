@@ -1,5 +1,4 @@
 /// <reference types="react" />
-/// <reference types="react" />
 import XBadgesTypes from './XBadges.types';
 export declare const XBadges: import("styled-components").IStyledComponent<"web", {
     ref?: import("react").LegacyRef<HTMLDListElement> | undefined;

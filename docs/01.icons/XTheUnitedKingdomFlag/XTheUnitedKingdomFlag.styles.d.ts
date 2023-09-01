@@ -1,5 +1,4 @@
 /// <reference types="react" />
-/// <reference types="react" />
 declare const S: {
     XTheUnitedKingdomFlag: import("styled-components").IStyledComponent<"web", {
         color?: string | undefined;

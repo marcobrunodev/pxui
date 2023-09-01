@@ -1,5 +1,4 @@
 /// <reference types="react" />
-/// <reference types="react" />
 import XContainerTypes from './XContainer.types';
 export declare const XContainer: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").Substitute<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLElement>, HTMLElement>, XContainerTypes>>;
 declare const S: {

@@ -1,5 +1,4 @@
 /// <reference types="react" />
-/// <reference types="react" />
 declare const _default: {
     XFactoryRadio: import("styled-components").IStyledComponent<"web", {
         ref?: import("react").LegacyRef<HTMLDivElement> | undefined;
