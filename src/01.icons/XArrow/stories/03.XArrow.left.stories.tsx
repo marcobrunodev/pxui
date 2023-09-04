@@ -2,18 +2,18 @@ import { Meta, StoryObj } from '@storybook/react'
 import XArrow from '..'
 
 const meta: Meta<typeof XArrow> = {
-  title: '01 - icons/XArrow/02 - Down',
+  title: '01 - icons/XArrow/03 - Left',
   component: XArrow
 }
 export default meta
 
 type Story = StoryObj<typeof XArrow>
 
-export const Down: Story = {
+export const Left: Story = {
   args: {
     right: false,
-    down: true,
-    left: false,
+    down: false,
+    left: true,
     up: false,
     primary: false,
     success: false,
@@ -23,11 +23,11 @@ export const Down: Story = {
   }
 }
 
-export const PrimaryDown: Story = {
+export const PrimaryLeft: Story = {
   args: {
     right: false,
-    down: true,
-    left: false,
+    down: false,
+    left: true,
     up: false,
     primary: true,
     success: false,
@@ -37,11 +37,11 @@ export const PrimaryDown: Story = {
   }
 }
 
-export const SuccessDown: Story = {
+export const SuccessLeft: Story = {
   args: {
     right: false,
-    down: true,
-    left: false,
+    down: false,
+    left: true,
     up: false,
     primary: false,
     success: true,
@@ -51,11 +51,11 @@ export const SuccessDown: Story = {
   }
 }
 
-export const WarningDown: Story = {
+export const WarningLeft: Story = {
   args: {
     right: false,
-    down: true,
-    left: false,
+    down: false,
+    left: true,
     up: false,
     primary: false,
     success: false,
@@ -65,11 +65,11 @@ export const WarningDown: Story = {
   }
 }
 
-export const ErrorDown: Story = {
+export const ErrorLeft: Story = {
   args: {
     right: false,
-    down: true,
-    left: false,
+    down: false,
+    left: true,
     up: false,
     primary: false,
     success: false,
@@ -79,11 +79,11 @@ export const ErrorDown: Story = {
   }
 }
 
-export const Disabled: Story = {
+export const DisabledLeft: Story = {
   args: {
     right: false,
-    down: true,
-    left: false,
+    down: false,
+    left: true,
     up: false,
     primary: false,
     success: false,

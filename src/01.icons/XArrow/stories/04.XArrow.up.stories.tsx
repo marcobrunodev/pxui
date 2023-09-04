@@ -2,19 +2,19 @@ import { Meta, StoryObj } from '@storybook/react'
 import XArrow from '..'
 
 const meta: Meta<typeof XArrow> = {
-  title: '01 - icons/XArrow/02 - Down',
+  title: '01 - icons/XArrow/04 - Up',
   component: XArrow
 }
 export default meta
 
 type Story = StoryObj<typeof XArrow>
 
-export const Down: Story = {
+export const Up: Story = {
   args: {
     right: false,
-    down: true,
+    down: false,
     left: false,
-    up: false,
+    up: true,
     primary: false,
     success: false,
     warning: false,
@@ -23,12 +23,12 @@ export const Down: Story = {
   }
 }
 
-export const PrimaryDown: Story = {
+export const PrimaryUp: Story = {
   args: {
     right: false,
-    down: true,
+    down: false,
     left: false,
-    up: false,
+    up: true,
     primary: true,
     success: false,
     warning: false,
@@ -37,12 +37,12 @@ export const PrimaryDown: Story = {
   }
 }
 
-export const SuccessDown: Story = {
+export const SuccessUp: Story = {
   args: {
     right: false,
-    down: true,
+    down: false,
     left: false,
-    up: false,
+    up: true,
     primary: false,
     success: true,
     warning: false,
@@ -51,12 +51,12 @@ export const SuccessDown: Story = {
   }
 }
 
-export const WarningDown: Story = {
+export const WarningUp: Story = {
   args: {
     right: false,
-    down: true,
+    down: false,
     left: false,
-    up: false,
+    up: true,
     primary: false,
     success: false,
     warning: true,
@@ -65,12 +65,12 @@ export const WarningDown: Story = {
   }
 }
 
-export const ErrorDown: Story = {
+export const ErrorUp: Story = {
   args: {
     right: false,
-    down: true,
+    down: false,
     left: false,
-    up: false,
+    up: true,
     primary: false,
     success: false,
     warning: false,
@@ -79,12 +79,12 @@ export const ErrorDown: Story = {
   }
 }
 
-export const Disabled: Story = {
+export const DisabledUp: Story = {
   args: {
     right: false,
-    down: true,
+    down: false,
     left: false,
-    up: false,
+    up: true,
     primary: false,
     success: false,
     warning: false,
