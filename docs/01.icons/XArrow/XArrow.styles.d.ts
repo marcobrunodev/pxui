@@ -284,7 +284,7 @@ export declare const XArrow: import("styled-components").IStyledComponent<"web",
     right?: boolean | undefined;
     down?: boolean | undefined;
     left?: boolean | undefined;
-    up?: boolean | undefined;
+    up: boolean;
     primary?: boolean | undefined;
     success?: boolean | undefined;
     warning?: boolean | undefined;
@@ -577,7 +577,7 @@ declare const S: {
         right?: boolean | undefined;
         down?: boolean | undefined;
         left?: boolean | undefined;
-        up?: boolean | undefined;
+        up: boolean;
         primary?: boolean | undefined;
         success?: boolean | undefined;
         warning?: boolean | undefined;
