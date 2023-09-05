@@ -1,6 +1,6 @@
 /// <reference types="react" />
 declare const S: {
-    XTwitch: import("styled-components").IStyledComponent<"web", {
+    XTwitch: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").Substitute<{
         color?: string | undefined;
         content?: string | undefined;
         height?: string | number | undefined;
@@ -282,6 +282,6 @@ declare const S: {
         srcSet?: string | undefined;
         useMap?: string | undefined;
         ref?: ((instance: HTMLImageElement | null) => void) | import("react").RefObject<HTMLImageElement> | null | undefined;
-    }>;
+    }, HTMLImageElement>>;
 };
 export default S;

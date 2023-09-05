@@ -1,5 +1,5 @@
 /// <reference types="react" />
-export declare const XTwitter: import("styled-components").IStyledComponent<"web", {
+export declare const XTwitter: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").Substitute<{
     color?: string | undefined;
     content?: string | undefined;
     height?: string | number | undefined;
@@ -281,9 +281,9 @@ export declare const XTwitter: import("styled-components").IStyledComponent<"web
     srcSet?: string | undefined;
     useMap?: string | undefined;
     ref?: ((instance: HTMLImageElement | null) => void) | import("react").RefObject<HTMLImageElement> | null | undefined;
-}>;
+}, HTMLImageElement>>;
 declare const S: {
-    XTwitter: import("styled-components").IStyledComponent<"web", {
+    XTwitter: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").Substitute<{
         color?: string | undefined;
         content?: string | undefined;
         height?: string | number | undefined;
@@ -565,6 +565,6 @@ declare const S: {
         srcSet?: string | undefined;
         useMap?: string | undefined;
         ref?: ((instance: HTMLImageElement | null) => void) | import("react").RefObject<HTMLImageElement> | null | undefined;
-    }>;
+    }, HTMLImageElement>>;
 };
 export default S;
