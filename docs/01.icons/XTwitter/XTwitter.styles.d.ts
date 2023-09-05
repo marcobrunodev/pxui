@@ -1,5 +1,5 @@
 /// <reference types="react" />
-export declare const XArrow: import("styled-components").IStyledComponent<"web", {
+export declare const XTwitter: import("styled-components").IStyledComponent<"web", {
     color?: string | undefined;
     content?: string | undefined;
     height?: string | number | undefined;
@@ -281,18 +281,9 @@ export declare const XArrow: import("styled-components").IStyledComponent<"web",
     srcSet?: string | undefined;
     useMap?: string | undefined;
     ref?: ((instance: HTMLImageElement | null) => void) | import("react").RefObject<HTMLImageElement> | null | undefined;
-    right?: boolean | undefined;
-    down?: boolean | undefined;
-    left?: boolean | undefined;
-    up?: boolean | undefined;
-    primary?: boolean | undefined;
-    success?: boolean | undefined;
-    warning?: boolean | undefined;
-    error?: boolean | undefined;
-    disabled?: boolean | undefined;
 }>;
 declare const S: {
-    XArrow: import("styled-components").IStyledComponent<"web", {
+    XTwitter: import("styled-components").IStyledComponent<"web", {
         color?: string | undefined;
         content?: string | undefined;
         height?: string | number | undefined;
@@ -574,15 +565,6 @@ declare const S: {
         srcSet?: string | undefined;
         useMap?: string | undefined;
         ref?: ((instance: HTMLImageElement | null) => void) | import("react").RefObject<HTMLImageElement> | null | undefined;
-        right?: boolean | undefined;
-        down?: boolean | undefined;
-        left?: boolean | undefined;
-        up?: boolean | undefined;
-        primary?: boolean | undefined;
-        success?: boolean | undefined;
-        warning?: boolean | undefined;
-        error?: boolean | undefined;
-        disabled?: boolean | undefined;
     }>;
 };
 export default S;
