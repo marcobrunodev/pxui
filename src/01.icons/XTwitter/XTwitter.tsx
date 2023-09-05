@@ -1,6 +1,6 @@
 import S from './XTwitter.styles'
 
-const XTwitter = (props: XTwitterTypes) => (
+const XTwitter = (props: HTMLImageElement) => (
   <S.XTwitter {...props} />
 )
 

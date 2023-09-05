@@ -1,7 +1,6 @@
-import XTwitchTypes from './XTwitch.types'
 import S from './XTwitch.styles'
 
-const XTwitch = (props: XTwitchTypes) => (
+const XTwitch = (props: HTMLImageElement) => (
   <S.XTwitch {...props} />
 )
 
