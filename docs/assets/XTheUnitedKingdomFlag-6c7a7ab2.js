@@ -1,2 +1,0 @@
-import{s as A,j as t}from"./styled-components.browser.esm-18f716b2.js";const e="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAAAjElEQVRIS2P8DwQMQHCKQxtEMZj9uAqmGWWywDQM/H8yDcyEqYOJE6sero7uFjJIZ4J9iO4DdJcT60NC5jAOmIW44grmU5g8rjhEl8cVt3Af0s1CWKJBSZJ4OIR8SMgcRrpbeJJdC5xK6QUYRy2kdlDTP9HQPZXCija6ZfwBs5BQKT90awu6V8D0thAA3MHz8YbpuIsAAAAASUVORK5CYII=",g=A.img.attrs({src:e,alt:"The United Kingdom flag"})``,i={XTheUnitedKingdomFlag:g},n=()=>t.jsx(i.XTheUnitedKingdomFlag,{});export{n as X};
-//# sourceMappingURL=XTheUnitedKingdomFlag-6c7a7ab2.js.map
