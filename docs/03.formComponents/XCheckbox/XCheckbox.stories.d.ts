@@ -1,0 +1,12 @@
+import { Meta, StoryObj } from '@storybook/react';
+import XCheckbox from '.';
+declare const meta: Meta<typeof XCheckbox>;
+export default meta;
+type Story = StoryObj<typeof XCheckbox>;
+export declare const Normal: Story;
+export declare const Checked: Story;
+export declare const PrimaryChecked: Story;
+export declare const SuccessChecked: Story;
+export declare const WarningChecked: Story;
+export declare const ErrorChecked: Story;
+export declare const DisabledChecked: Story;
