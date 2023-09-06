@@ -1,4 +1,5 @@
 export type XFlagsTypes = {
+  loading?: boolean,
   br?: boolean,
   uk?: boolean
 }
