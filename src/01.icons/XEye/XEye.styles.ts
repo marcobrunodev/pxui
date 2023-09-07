@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import eye from '../../assets/icons/eye.png'
 
-const XEye = styled.img.attrs({ src: eye, alt: 'Eye icon' }) <HTMLImageElement>``
+export const XEye = styled.img<HTMLImageElement>``
 
 const S = {
   XEye
