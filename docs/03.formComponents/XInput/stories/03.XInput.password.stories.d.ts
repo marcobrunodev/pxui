@@ -1,0 +1,11 @@
+import { Meta, StoryObj } from '@storybook/react';
+import XInput from '..';
+declare const meta: Meta<typeof XInput>;
+export default meta;
+type Story = StoryObj<typeof XInput>;
+export declare const Password: Story;
+export declare const PrimaryPassword: Story;
+export declare const SuccessPassword: Story;
+export declare const WarningPassword: Story;
+export declare const ErrorPassword: Story;
+export declare const DisabledPassword: Story;
