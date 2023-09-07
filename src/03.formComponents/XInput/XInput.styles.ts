@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components'
 import XInputTypes from './XInput.types'
+import { XEye } from '../../01.icons/XEye/XEye.styles'
+import { XEyeClose } from '../../01.icons/XEyeClose/XEyeClose.styles'
 
 const hasDisabled = ({ disabled, simple }: Pick<XInputTypes, 'disabled' | 'simple'>) => (
   (disabled && !simple && css`
@@ -53,6 +55,7 @@ const hasSimple = ({ simple }: Pick<XInputTypes, 'simple'>) => simple && css`
   border-color: var(--color-white);
 `
 
+
 export const XInput = styled.input<XInputTypes>`
   background-color: transparent;
   border-image-slice: 2;
@@ -68,7 +71,7 @@ export const XInput = styled.input<XInputTypes>`
   transition: 100ms transform ease-in-out;
   box-sizing: border-box;
   width: 100%;
-
+  
   &:focus {
     outline: none;
   }
@@ -81,7 +84,36 @@ export const XInput = styled.input<XInputTypes>`
   ${hasDisabled};
 `
 
+const typePassword = ({ isPassword = false }: Pick<XInputTypes, 'isPassword'>) => isPassword && css`
+  & > ${XInput} {
+    font-family: "Press Start 2P", sans-serif;
+    height: 4.1rem;
+    padding-right: 4.8rem;
+  } 
+
+  & > ${XEye}, & > ${XEyeClose} {
+    position: absolute;
+    right: var(--gap-medium);
+    cursor: var(--cursor-pointer);
+    transition: transform 100ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+`
+
+const Password = styled.div<Pick<XInputTypes, 'show' | 'type' | 'isPassword'>>`
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  ${typePassword};
+`
+
 const S = {
+  Password,
   XInput
 }
 

@@ -2,14 +2,14 @@ import { Meta, StoryObj } from '@storybook/react'
 import XInput from '..'
 
 const meta: Meta<typeof XInput> = {
-  title: '03 - Form Components/XInput/01 - Normal',
+  title: '03 - Form Components/XInput/03 - Type Password',
   component: XInput
 }
 export default meta
 
 type Story = StoryObj<typeof XInput>
 
-export const Normal: Story = {
+export const Password: Story = {
   args: {
     simple: false,
     primary: false,
@@ -17,11 +17,11 @@ export const Normal: Story = {
     warning: false,
     error: false,
     disabled: false,
-    type: 'text'
+    type: 'password'
   }
 }
 
-export const Primary: Story = {
+export const PrimaryPassword: Story = {
   args: {
     simple: false,
     primary: true,
@@ -29,11 +29,11 @@ export const Primary: Story = {
     warning: false,
     error: false,
     disabled: false,
-    type: 'text'
+    type: 'password'
   }
 }
 
-export const Success: Story = {
+export const SuccessPassword: Story = {
   args: {
     simple: false,
     primary: false,
@@ -41,11 +41,11 @@ export const Success: Story = {
     warning: false,
     error: false,
     disabled: false,
-    type: 'text'
+    type: 'password'
   }
 }
 
-export const Warning: Story = {
+export const WarningPassword: Story = {
   args: {
     simple: false,
     primary: false,
@@ -53,11 +53,11 @@ export const Warning: Story = {
     warning: true,
     error: false,
     disabled: false,
-    type: 'text'
+    type: 'password'
   }
 }
 
-export const Error: Story = {
+export const ErrorPassword: Story = {
   args: {
     simple: false,
     primary: false,
@@ -65,11 +65,11 @@ export const Error: Story = {
     warning: false,
     error: true,
     disabled: false,
-    type: 'text'
+    type: 'password'
   }
 }
 
-export const Disabled: Story = {
+export const DisabledPassword: Story = {
   args: {
     simple: false,
     primary: false,
@@ -77,6 +77,6 @@ export const Disabled: Story = {
     warning: false,
     error: false,
     disabled: true,
-    type: 'text'
+    type: 'password'
   }
 }

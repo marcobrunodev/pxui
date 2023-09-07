@@ -2,81 +2,81 @@ import { Meta, StoryObj } from '@storybook/react'
 import XInput from '..'
 
 const meta: Meta<typeof XInput> = {
-  title: '03 - Form Components/XInput/01 - Normal',
+  title: '03 - Form Components/XInput/03 - Type Simple and Password',
   component: XInput
 }
 export default meta
 
 type Story = StoryObj<typeof XInput>
 
-export const Normal: Story = {
+export const SimplePassword: Story = {
   args: {
-    simple: false,
+    simple: true,
     primary: false,
     success: false,
     warning: false,
     error: false,
     disabled: false,
-    type: 'text'
+    type: 'password'
   }
 }
 
-export const Primary: Story = {
+export const PrimarySimplePassword: Story = {
   args: {
-    simple: false,
+    simple: true,
     primary: true,
     success: false,
     warning: false,
     error: false,
     disabled: false,
-    type: 'text'
+    type: 'password'
   }
 }
 
-export const Success: Story = {
+export const SuccessSimplePassword: Story = {
   args: {
-    simple: false,
+    simple: true,
     primary: false,
     success: true,
     warning: false,
     error: false,
     disabled: false,
-    type: 'text'
+    type: 'password'
   }
 }
 
-export const Warning: Story = {
+export const WarningSimplePassword: Story = {
   args: {
-    simple: false,
+    simple: true,
     primary: false,
     success: false,
     warning: true,
     error: false,
     disabled: false,
-    type: 'text'
+    type: 'password'
   }
 }
 
-export const Error: Story = {
+export const ErrorSimplePassword: Story = {
   args: {
-    simple: false,
+    simple: true,
     primary: false,
     success: false,
     warning: false,
     error: true,
     disabled: false,
-    type: 'text'
+    type: 'password'
   }
 }
 
-export const Disabled: Story = {
+export const DisabledSimplePassword: Story = {
   args: {
-    simple: false,
+    simple: true,
     primary: false,
     success: false,
     warning: false,
     error: false,
     disabled: true,
-    type: 'text'
+    type: 'password'
   }
 }
