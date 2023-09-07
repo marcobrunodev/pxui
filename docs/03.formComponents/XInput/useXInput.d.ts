@@ -1,5 +1,7 @@
-declare const useXInput: () => {
+declare const useXInput: (argType: string) => {
+    isPassword: boolean;
     show: boolean;
-    toggleShow: (event: MouseEvent) => void;
+    type: string;
+    toggleShow: () => void;
 };
 export default useXInput;
