@@ -103,6 +103,12 @@ const typePassword = ({ isPassword = false }: Pick<XInputTypes, 'isPassword'>) =
   }
 `
 
+const typePasswordAndShow = ({ isPassword, show }: Pick<XInputTypes, 'isPassword' | 'show'>) => isPassword && show && css`
+  & > ${XInput} {
+    font-family: 'FontPxRegular', sans-serif;
+  }
+`
+
 const Password = styled.div<Pick<XInputTypes, 'show' | 'type' | 'isPassword'>>`
   position: relative;
   display: flex;
@@ -110,6 +116,7 @@ const Password = styled.div<Pick<XInputTypes, 'show' | 'type' | 'isPassword'>>`
   width: 100%;
 
   ${typePassword};
+  ${typePasswordAndShow}
 `
 
 const S = {
