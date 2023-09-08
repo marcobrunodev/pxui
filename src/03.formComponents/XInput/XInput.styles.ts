@@ -109,7 +109,7 @@ const typePasswordAndShow = ({ isPassword, show }: Pick<XInputTypes, 'isPassword
   }
 `
 
-const Password = styled.div<Pick<XInputTypes, 'show' | 'type' | 'isPassword'>>`
+const Password = styled.label<Pick<XInputTypes, 'show' | 'type' | 'isPassword'>>`
   position: relative;
   display: flex;
   align-items: center;
