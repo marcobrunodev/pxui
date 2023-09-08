@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import XFile from '.'
 
 const meta: Meta<typeof XFile> = {
-  title: '02 - Components/XFile',
+  title: '03 - Form Components/XFile',
   component: XFile
 }
 export default meta
