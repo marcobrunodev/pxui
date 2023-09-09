@@ -8,5 +8,6 @@ export type XArrowTypes = {
     warning?: boolean;
     error?: boolean;
     disabled?: boolean;
+    runningArrowAnimation?: boolean;
 };
 export default XArrowTypes;

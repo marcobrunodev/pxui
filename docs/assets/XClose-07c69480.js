@@ -1,0 +1,2 @@
+import{j as r}from"./styled-components.browser.esm-18f716b2.js";import{S as s}from"./XClose.styles-90715167.js";const o=({onClick:e})=>r.jsx(s.XClose,{onClick:e});try{o.displayName="XClose",o.__docgenInfo={description:"",displayName:"XClose",props:{onClick:{defaultValue:null,description:"",name:"onClick",required:!1,type:{name:"MouseEventHandler<HTMLImageElement>"}}}}}catch{}export{o as X};
+//# sourceMappingURL=XClose-07c69480.js.map

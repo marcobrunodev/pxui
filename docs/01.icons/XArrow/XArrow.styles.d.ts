@@ -290,6 +290,7 @@ export declare const XArrow: import("styled-components").IStyledComponent<"web",
     warning?: boolean | undefined;
     error?: boolean | undefined;
     disabled?: boolean | undefined;
+    runningArrowAnimation?: boolean | undefined;
 }>;
 declare const S: {
     XArrow: import("styled-components").IStyledComponent<"web", {
@@ -583,6 +584,7 @@ declare const S: {
         warning?: boolean | undefined;
         error?: boolean | undefined;
         disabled?: boolean | undefined;
+        runningArrowAnimation?: boolean | undefined;
     }>;
 };
 export default S;

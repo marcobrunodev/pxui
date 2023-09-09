@@ -1,3 +1,3 @@
-import XButtonTypes from '../../02.components/XButton/XButton.types';
-declare const XFile: (props: XButtonTypes) => import("react/jsx-runtime").JSX.Element;
+import XFileTypes from './XFile.types';
+declare const XFile: ({ children, inputRef, files, multiple, primary, success, warning, error, disabled, runningArrowAnimation, clear, onChange, arrowOnAnimationend }: XFileTypes) => import("react/jsx-runtime").JSX.Element;
 export default XFile;
