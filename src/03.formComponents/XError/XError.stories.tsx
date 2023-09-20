@@ -11,7 +11,6 @@ type Story = StoryObj<typeof XError>
 
 export const Normal: Story = {
   args: {
-    children: 'Error message',
-    show: true
+    children: 'Error message'
   }
 }

@@ -1,6 +1,5 @@
 export type XErrorTypes = {
-  children: string,
-  show: boolean
+  children: string
 }
 
 export default XErrorTypes
