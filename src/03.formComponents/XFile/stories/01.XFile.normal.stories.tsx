@@ -12,7 +12,7 @@ type Story = StoryObj<typeof XFile>
 export const Normal: Story = {
   args: {
     children: 'Choose a file...',
-    files: 'No files',
+    files: 'No files...',
     primary: false,
     success: false,
     warning: false,
@@ -25,7 +25,7 @@ export const Normal: Story = {
 export const Primary: Story = {
   args: {
     children: 'Choose a file...',
-    files: 'No files',
+    files: 'No files...',
     primary: true,
     success: false,
     warning: false,
@@ -38,7 +38,7 @@ export const Primary: Story = {
 export const Success: Story = {
   args: {
     children: 'Choose a file...',
-    files: 'No files',
+    files: 'No files...',
     primary: false,
     success: true,
     warning: false,
@@ -51,7 +51,7 @@ export const Success: Story = {
 export const Warning: Story = {
   args: {
     children: 'Choose a file...',
-    files: 'No files',
+    files: 'No files...',
     primary: false,
     success: false,
     warning: true,
@@ -64,7 +64,7 @@ export const Warning: Story = {
 export const Error: Story = {
   args: {
     children: 'Choose a file...',
-    files: 'No files',
+    files: 'No files...',
     primary: false,
     success: false,
     warning: false,
@@ -77,7 +77,7 @@ export const Error: Story = {
 export const Disabled: Story = {
   args: {
     children: 'Choose a file...',
-    files: 'No files',
+    files: 'No files...',
     primary: false,
     success: false,
     warning: false,

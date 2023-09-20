@@ -1,16 +1,21 @@
-import { AnimationEventHandler, ChangeEventHandler, MouseEventHandler, Ref } from "react"
+import { AnimationEventHandler, ChangeEventHandler, MouseEventHandler, RefObject } from "react"
+import DragAndDropTypes from "./DragAndDrop/DragAndDrop.types"
 
 type XFileTypes = {
   children?: string,
+  inputRef?: RefObject<HTMLInputElement>,
+  showFilesRef: RefObject<HTMLOutputElement>,
+  carouselRef: RefObject<HTMLSpanElement>,
+  moveAnimation: number,
   files?: string,
   primary?: boolean,
   success?: boolean,
   warning?: boolean,
   error?: boolean,
   disabled?: boolean,
-  inputRef?: Ref<HTMLInputElement>,
   runningArrowAnimation?: boolean,
   multiple?: boolean,
+  dragAndDrop?: DragAndDropTypes,
   clear?: MouseEventHandler<HTMLImageElement>,
   onChange?: ChangeEventHandler,
   arrowOnAnimationend?: AnimationEventHandler

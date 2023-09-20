@@ -43,26 +43,73 @@ const Arrow = styled(XArrow)`
   ${hasRunningArrowAnimation}
 `
 
+const marquee = keyframes`
+  from {
+    transform: translateX(0.6rem);
+  }
+  
+  to {
+    transform: translateX(var(--move)); 
+  }
+`
+
+const Carousel = styled.span<Pick<XFileTypes, 'moveAnimation'>>`
+  ${({ moveAnimation }) => moveAnimation > 0 && css`
+    --move: calc((${moveAnimation}px + 0.5rem) * -1);
+    --play-state: paused;
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    animation: calc(${moveAnimation} * 25ms) ${marquee} infinite alternate linear var(--play-state);
+
+    &:hover {
+      --play-state: running;
+    }
+  `}
+`
+
 const ShowFiles = styled.output`
+  position: relative;
   padding-bottom: var(--gap-smaller);
+  overflow: hidden;
+  height: 2.5rem;
+
+  /* &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--gap-medium);
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.01), var(--color-black));
+  } */
 `
 
 export const XFile = styled(XButton).attrs({ as: 'label' })``
 
-const WrapperXFile = styled.div`
+const WrapperInput = styled.div`
   display: inline-flex;
   position: relative;
   overflow: hidden;
   gap: var(--gap-small);
   align-items: center;
-  padding-right: var(--gap-small)
+  padding-right: var(--gap-small);
+`
+
+const WrapperXFile = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--gap-small);
 `
 
 const S = {
   WrapperXFile,
+  WrapperInput,
   XFile,
   Arrow,
   ShowFiles,
+  Carousel,
   Input,
   Close
 }

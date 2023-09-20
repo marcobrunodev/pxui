@@ -9,10 +9,10 @@ export default meta
 
 type Story = StoryObj<typeof XFile>
 
-export const Normal: Story = {
+export const Multiple: Story = {
   args: {
-    children: 'Choose a file...',
-    files: 'No files',
+    children: 'Choose some files...',
+    files: 'No files...',
     primary: false,
     success: false,
     warning: false,
@@ -22,10 +22,10 @@ export const Normal: Story = {
   }
 }
 
-export const Primary: Story = {
+export const PrimaryMultiple: Story = {
   args: {
-    children: 'Choose a file...',
-    files: 'No files',
+    children: 'Choose some files...',
+    files: 'No files...',
     primary: true,
     success: false,
     warning: false,
@@ -35,10 +35,10 @@ export const Primary: Story = {
   }
 }
 
-export const Success: Story = {
+export const SuccessMultiple: Story = {
   args: {
-    children: 'Choose a file...',
-    files: 'No files',
+    children: 'Choose some files...',
+    files: 'No files...',
     primary: false,
     success: true,
     warning: false,
@@ -48,10 +48,10 @@ export const Success: Story = {
   }
 }
 
-export const Warning: Story = {
+export const WarningMultiple: Story = {
   args: {
-    children: 'Choose a file...',
-    files: 'No files',
+    children: 'Choose some files...',
+    files: 'No files...',
     primary: false,
     success: false,
     warning: true,
@@ -61,10 +61,10 @@ export const Warning: Story = {
   }
 }
 
-export const Error: Story = {
+export const ErrorMultiple: Story = {
   args: {
-    children: 'Choose a file...',
-    files: 'No files',
+    children: 'Choose some files...',
+    files: 'No files...',
     primary: false,
     success: false,
     warning: false,
@@ -74,10 +74,10 @@ export const Error: Story = {
   }
 }
 
-export const Disabled: Story = {
+export const DisabledMultiple: Story = {
   args: {
-    children: 'Choose a file...',
-    files: 'No files',
+    children: 'Choose some files...',
+    files: 'No files...',
     primary: false,
     success: false,
     warning: false,
