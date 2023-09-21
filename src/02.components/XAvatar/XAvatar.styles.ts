@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { XContainer } from '../XContainer/XContainer.styles'
 
 const Image = styled.img`
-  transform: translateY(var(--gap-smaller));
+  transform: translateY(var(--gap-small));
 `
 
 export const XAvatar = styled(XContainer)`
