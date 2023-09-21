@@ -7,7 +7,7 @@ import XArrow from '../../01.icons/XArrow'
 const XFieldset = ({ label, input }: XFieldsetTypes) => (
   <S.XFieldset>
     <XInput {...input} />
-    <XLabel children='' {...label} />
+    <XLabel {...label} />
     <XArrow />
   </S.XFieldset>
 )

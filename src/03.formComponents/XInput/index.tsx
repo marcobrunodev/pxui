@@ -9,7 +9,7 @@ export default (props: XInputTypes) => {
     <XInput
       {...props}
       show={show}
-      type={type}
+      type={type || 'text'}
       isPassword={isPassword}
       toggleShow={toggleShow}
     />
