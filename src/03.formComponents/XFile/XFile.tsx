@@ -1,7 +1,6 @@
 import XFileTypes from './XFile.types'
 import S from './XFile.styles'
 import DragAndDrop from './DragAndDrop'
-import XError from '../XError'
 
 const XFile = ({
   children,
