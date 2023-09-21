@@ -1,7 +1,7 @@
 {
-  "name": "pxui",
+  "name": "pixui",
   "private": true,
-  "version": "0.0.7",
+  "version": "0.1.0",
   "type": "module",
   "exports": {
     ".": {
@@ -54,9 +54,9 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.0"
   },
-  "module": "./dist/pxui.es.js",
-  "main": "./dist/pxui.js",
+  "module": "./dist/pixui.es.js",
+  "main": "./dist/pixui.js",
   "types": "./dist/index.d.ts",
   "readme": "ERROR: No README data found!",
-  "_id": "pxui@0.0.7"
+  "_id": "pixui@0.1.0"
 }

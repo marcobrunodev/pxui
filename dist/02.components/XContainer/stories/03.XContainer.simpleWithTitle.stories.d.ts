@@ -1,0 +1,11 @@
+import { Meta, StoryObj } from "@storybook/react";
+import XContainer from "..";
+declare const meta: Meta<typeof XContainer>;
+export default meta;
+type Story = StoryObj<typeof XContainer>;
+export declare const SimpleWithTitle: Story;
+export declare const PrimarySimpleWithTitle: Story;
+export declare const SuccessSimpleWithTitle: Story;
+export declare const WarningSimpleWithTitle: Story;
+export declare const ErrorSimpleWithTitle: Story;
+export declare const DisableSimpleWithTitle: Story;

@@ -1,0 +1,11 @@
+import { Meta, StoryObj } from '@storybook/react';
+import XFile from '..';
+declare const meta: Meta<typeof XFile>;
+export default meta;
+type Story = StoryObj<typeof XFile>;
+export declare const DragAndDrop: Story;
+export declare const PrimaryDragAndDrop: Story;
+export declare const SuccessDragAndDrop: Story;
+export declare const WarningDragAndDrop: Story;
+export declare const ErrorDragAndDrop: Story;
+export declare const DisabledDragAndDrop: Story;

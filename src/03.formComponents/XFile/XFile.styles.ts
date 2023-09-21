@@ -74,16 +74,6 @@ const ShowFiles = styled.output`
   padding-bottom: var(--gap-smaller);
   overflow: hidden;
   height: 2.5rem;
-
-  /* &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: var(--gap-medium);
-    height: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.01), var(--color-black));
-  } */
 `
 
 export const XFile = styled(XButton).attrs({ as: 'label' })``
