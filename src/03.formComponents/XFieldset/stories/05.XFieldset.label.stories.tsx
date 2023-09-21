@@ -20,6 +20,7 @@ export const Normal: Story = {
       disabled: false,
     },
     input: {
+      type: 'text',
       simple: false,
       primary: false,
       success: false,
@@ -41,6 +42,7 @@ export const Primary: Story = {
       disabled: false,
     },
     input: {
+      type: 'text',
       simple: false,
       primary: false,
       success: false,
@@ -62,6 +64,7 @@ export const Success: Story = {
       disabled: false,
     },
     input: {
+      type: 'text',
       simple: false,
       primary: false,
       success: false,
@@ -83,6 +86,7 @@ export const Warning: Story = {
       disabled: false,
     },
     input: {
+      type: 'text',
       simple: false,
       primary: false,
       success: false,
@@ -104,6 +108,7 @@ export const Error: Story = {
       disabled: false,
     },
     input: {
+      type: 'text',
       simple: false,
       primary: false,
       success: false,
@@ -125,6 +130,7 @@ export const Disabled: Story = {
       disabled: true,
     },
     input: {
+      type: 'text',
       simple: false,
       primary: false,
       success: false,
