@@ -2,17 +2,21 @@
 /// <reference types="react" />
 declare const S: {
     XTwitch: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").Substitute<{
-        color?: string | undefined;
-        content?: string | undefined;
-        height?: string | number | undefined;
-        translate?: "yes" | "no" | undefined;
-        width?: string | number | undefined;
         slot?: string | undefined;
         style?: import("react").CSSProperties | undefined;
         title?: string | undefined;
-        children?: import("react").ReactNode;
-        onClick?: import("react").MouseEventHandler<HTMLImageElement> | undefined;
         key?: import("react").Key | null | undefined;
+        alt?: string | undefined;
+        crossOrigin?: "" | "anonymous" | "use-credentials" | undefined;
+        decoding?: "async" | "auto" | "sync" | undefined;
+        height?: string | number | undefined;
+        loading?: "eager" | "lazy" | undefined;
+        referrerPolicy?: import("react").HTMLAttributeReferrerPolicy | undefined;
+        sizes?: string | undefined;
+        src?: string | undefined;
+        srcSet?: string | undefined;
+        useMap?: string | undefined;
+        width?: string | number | undefined;
         defaultChecked?: boolean | undefined;
         defaultValue?: string | number | readonly string[] | undefined;
         suppressContentEditableWarning?: boolean | undefined;
@@ -31,9 +35,11 @@ declare const S: {
         placeholder?: string | undefined;
         spellCheck?: (boolean | "true" | "false") | undefined;
         tabIndex?: number | undefined;
+        translate?: "yes" | "no" | undefined;
         radioGroup?: string | undefined;
         role?: import("react").AriaRole | undefined;
         about?: string | undefined;
+        content?: string | undefined;
         datatype?: string | undefined;
         inlist?: any;
         prefix?: string | undefined;
@@ -46,6 +52,7 @@ declare const S: {
         autoCapitalize?: string | undefined;
         autoCorrect?: string | undefined;
         autoSave?: string | undefined;
+        color?: string | undefined;
         itemProp?: string | undefined;
         itemScope?: boolean | undefined;
         itemType?: string | undefined;
@@ -54,11 +61,11 @@ declare const S: {
         results?: number | undefined;
         security?: string | undefined;
         unselectable?: "on" | "off" | undefined;
-        inputMode?: "none" | "search" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
+        inputMode?: "search" | "text" | "none" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
         is?: string | undefined;
         'aria-activedescendant'?: string | undefined;
         'aria-atomic'?: (boolean | "true" | "false") | undefined;
-        'aria-autocomplete'?: "none" | "list" | "inline" | "both" | undefined;
+        'aria-autocomplete'?: "list" | "none" | "inline" | "both" | undefined;
         'aria-braillelabel'?: string | undefined;
         'aria-brailleroledescription'?: string | undefined;
         'aria-busy'?: (boolean | "true" | "false") | undefined;
@@ -68,17 +75,17 @@ declare const S: {
         'aria-colindextext'?: string | undefined;
         'aria-colspan'?: number | undefined;
         'aria-controls'?: string | undefined;
-        'aria-current'?: boolean | "page" | "time" | "true" | "false" | "step" | "location" | "date" | undefined;
+        'aria-current'?: boolean | "time" | "step" | "page" | "true" | "false" | "location" | "date" | undefined;
         'aria-describedby'?: string | undefined;
         'aria-description'?: string | undefined;
         'aria-details'?: string | undefined;
         'aria-disabled'?: (boolean | "true" | "false") | undefined;
-        'aria-dropeffect'?: "none" | "link" | "copy" | "execute" | "move" | "popup" | undefined;
+        'aria-dropeffect'?: "link" | "none" | "copy" | "execute" | "move" | "popup" | undefined;
         'aria-errormessage'?: string | undefined;
         'aria-expanded'?: (boolean | "true" | "false") | undefined;
         'aria-flowto'?: string | undefined;
         'aria-grabbed'?: (boolean | "true" | "false") | undefined;
-        'aria-haspopup'?: boolean | "grid" | "dialog" | "menu" | "true" | "false" | "listbox" | "tree" | undefined;
+        'aria-haspopup'?: boolean | "dialog" | "menu" | "grid" | "true" | "false" | "listbox" | "tree" | undefined;
         'aria-hidden'?: (boolean | "true" | "false") | undefined;
         'aria-invalid'?: boolean | "true" | "false" | "grammar" | "spelling" | undefined;
         'aria-keyshortcuts'?: string | undefined;
@@ -95,7 +102,7 @@ declare const S: {
         'aria-posinset'?: number | undefined;
         'aria-pressed'?: boolean | "true" | "false" | "mixed" | undefined;
         'aria-readonly'?: (boolean | "true" | "false") | undefined;
-        'aria-relevant'?: "all" | "text" | "additions" | "additions removals" | "additions text" | "removals" | "removals additions" | "removals text" | "text additions" | "text removals" | undefined;
+        'aria-relevant'?: "text" | "all" | "additions" | "additions removals" | "additions text" | "removals" | "removals additions" | "removals text" | "text additions" | "text removals" | undefined;
         'aria-required'?: (boolean | "true" | "false") | undefined;
         'aria-roledescription'?: string | undefined;
         'aria-rowcount'?: number | undefined;
@@ -109,6 +116,7 @@ declare const S: {
         'aria-valuemin'?: number | undefined;
         'aria-valuenow'?: number | undefined;
         'aria-valuetext'?: string | undefined;
+        children?: import("react").ReactNode;
         dangerouslySetInnerHTML?: {
             __html: string | TrustedHTML;
         } | undefined;
@@ -198,6 +206,7 @@ declare const S: {
         onWaitingCapture?: import("react").ReactEventHandler<HTMLImageElement> | undefined;
         onAuxClick?: import("react").MouseEventHandler<HTMLImageElement> | undefined;
         onAuxClickCapture?: import("react").MouseEventHandler<HTMLImageElement> | undefined;
+        onClick?: import("react").MouseEventHandler<HTMLImageElement> | undefined;
         onClickCapture?: import("react").MouseEventHandler<HTMLImageElement> | undefined;
         onContextMenu?: import("react").MouseEventHandler<HTMLImageElement> | undefined;
         onContextMenuCapture?: import("react").MouseEventHandler<HTMLImageElement> | undefined;
@@ -273,15 +282,6 @@ declare const S: {
         onAnimationIterationCapture?: import("react").AnimationEventHandler<HTMLImageElement> | undefined;
         onTransitionEnd?: import("react").TransitionEventHandler<HTMLImageElement> | undefined;
         onTransitionEndCapture?: import("react").TransitionEventHandler<HTMLImageElement> | undefined;
-        crossOrigin?: "" | "anonymous" | "use-credentials" | undefined;
-        referrerPolicy?: import("react").HTMLAttributeReferrerPolicy | undefined;
-        sizes?: string | undefined;
-        alt?: string | undefined;
-        src?: string | undefined;
-        loading?: "eager" | "lazy" | undefined;
-        decoding?: "async" | "auto" | "sync" | undefined;
-        srcSet?: string | undefined;
-        useMap?: string | undefined;
         ref?: ((instance: HTMLImageElement | null) => void) | import("react").RefObject<HTMLImageElement> | null | undefined;
     }, HTMLImageElement>>;
 };

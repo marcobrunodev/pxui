@@ -1,20 +1,14 @@
 /// <reference types="react" />
 /// <reference types="react" />
 export declare const XAvatar: import("styled-components").IStyledComponent<"web", {
-    color?: string | undefined;
-    content?: string | undefined;
-    translate?: "yes" | "no" | undefined;
-    slot?: string | undefined;
-    style?: import("react").CSSProperties | undefined;
-    title?: string | undefined;
-    full?: boolean | undefined;
-    children: import("react").ReactNode;
     primary?: boolean | undefined;
     success?: boolean | undefined;
     warning?: boolean | undefined;
     error?: boolean | undefined;
     disabled?: boolean | undefined;
-    onClick?: import("react").MouseEventHandler<HTMLElement> | undefined;
+    slot?: string | undefined;
+    style?: import("react").CSSProperties | undefined;
+    title?: string | undefined;
     key?: import("react").Key | null | undefined;
     defaultChecked?: boolean | undefined;
     defaultValue?: string | number | readonly string[] | undefined;
@@ -34,9 +28,11 @@ export declare const XAvatar: import("styled-components").IStyledComponent<"web"
     placeholder?: string | undefined;
     spellCheck?: (boolean | "true" | "false") | undefined;
     tabIndex?: number | undefined;
+    translate?: "yes" | "no" | undefined;
     radioGroup?: string | undefined;
     role?: import("react").AriaRole | undefined;
     about?: string | undefined;
+    content?: string | undefined;
     datatype?: string | undefined;
     inlist?: any;
     prefix?: string | undefined;
@@ -49,6 +45,7 @@ export declare const XAvatar: import("styled-components").IStyledComponent<"web"
     autoCapitalize?: string | undefined;
     autoCorrect?: string | undefined;
     autoSave?: string | undefined;
+    color?: string | undefined;
     itemProp?: string | undefined;
     itemScope?: boolean | undefined;
     itemType?: string | undefined;
@@ -57,11 +54,11 @@ export declare const XAvatar: import("styled-components").IStyledComponent<"web"
     results?: number | undefined;
     security?: string | undefined;
     unselectable?: "on" | "off" | undefined;
-    inputMode?: "none" | "search" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
+    inputMode?: "search" | "text" | "none" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
     is?: string | undefined;
     'aria-activedescendant'?: string | undefined;
     'aria-atomic'?: (boolean | "true" | "false") | undefined;
-    'aria-autocomplete'?: "none" | "list" | "inline" | "both" | undefined;
+    'aria-autocomplete'?: "list" | "none" | "inline" | "both" | undefined;
     'aria-braillelabel'?: string | undefined;
     'aria-brailleroledescription'?: string | undefined;
     'aria-busy'?: (boolean | "true" | "false") | undefined;
@@ -71,17 +68,17 @@ export declare const XAvatar: import("styled-components").IStyledComponent<"web"
     'aria-colindextext'?: string | undefined;
     'aria-colspan'?: number | undefined;
     'aria-controls'?: string | undefined;
-    'aria-current'?: boolean | "page" | "time" | "true" | "false" | "step" | "location" | "date" | undefined;
+    'aria-current'?: boolean | "time" | "step" | "page" | "true" | "false" | "location" | "date" | undefined;
     'aria-describedby'?: string | undefined;
     'aria-description'?: string | undefined;
     'aria-details'?: string | undefined;
     'aria-disabled'?: (boolean | "true" | "false") | undefined;
-    'aria-dropeffect'?: "none" | "link" | "copy" | "execute" | "move" | "popup" | undefined;
+    'aria-dropeffect'?: "link" | "none" | "copy" | "execute" | "move" | "popup" | undefined;
     'aria-errormessage'?: string | undefined;
     'aria-expanded'?: (boolean | "true" | "false") | undefined;
     'aria-flowto'?: string | undefined;
     'aria-grabbed'?: (boolean | "true" | "false") | undefined;
-    'aria-haspopup'?: boolean | "grid" | "dialog" | "menu" | "true" | "false" | "listbox" | "tree" | undefined;
+    'aria-haspopup'?: boolean | "dialog" | "menu" | "grid" | "true" | "false" | "listbox" | "tree" | undefined;
     'aria-hidden'?: (boolean | "true" | "false") | undefined;
     'aria-invalid'?: boolean | "true" | "false" | "grammar" | "spelling" | undefined;
     'aria-keyshortcuts'?: string | undefined;
@@ -98,7 +95,7 @@ export declare const XAvatar: import("styled-components").IStyledComponent<"web"
     'aria-posinset'?: number | undefined;
     'aria-pressed'?: boolean | "true" | "false" | "mixed" | undefined;
     'aria-readonly'?: (boolean | "true" | "false") | undefined;
-    'aria-relevant'?: "all" | "text" | "additions" | "additions removals" | "additions text" | "removals" | "removals additions" | "removals text" | "text additions" | "text removals" | undefined;
+    'aria-relevant'?: "text" | "all" | "additions" | "additions removals" | "additions text" | "removals" | "removals additions" | "removals text" | "text additions" | "text removals" | undefined;
     'aria-required'?: (boolean | "true" | "false") | undefined;
     'aria-roledescription'?: string | undefined;
     'aria-rowcount'?: number | undefined;
@@ -112,6 +109,7 @@ export declare const XAvatar: import("styled-components").IStyledComponent<"web"
     'aria-valuemin'?: number | undefined;
     'aria-valuenow'?: number | undefined;
     'aria-valuetext'?: string | undefined;
+    children: import("react").ReactNode;
     dangerouslySetInnerHTML?: {
         __html: string | TrustedHTML;
     } | undefined;
@@ -201,6 +199,7 @@ export declare const XAvatar: import("styled-components").IStyledComponent<"web"
     onWaitingCapture?: import("react").ReactEventHandler<HTMLElement> | undefined;
     onAuxClick?: import("react").MouseEventHandler<HTMLElement> | undefined;
     onAuxClickCapture?: import("react").MouseEventHandler<HTMLElement> | undefined;
+    onClick?: import("react").MouseEventHandler<HTMLElement> | undefined;
     onClickCapture?: import("react").MouseEventHandler<HTMLElement> | undefined;
     onContextMenu?: import("react").MouseEventHandler<HTMLElement> | undefined;
     onContextMenuCapture?: import("react").MouseEventHandler<HTMLElement> | undefined;
@@ -276,6 +275,7 @@ export declare const XAvatar: import("styled-components").IStyledComponent<"web"
     onAnimationIterationCapture?: import("react").AnimationEventHandler<HTMLElement> | undefined;
     onTransitionEnd?: import("react").TransitionEventHandler<HTMLElement> | undefined;
     onTransitionEndCapture?: import("react").TransitionEventHandler<HTMLElement> | undefined;
+    full?: boolean | undefined;
     titleAttr?: import("../XText/XText.types").XTextTypes | undefined;
     simple?: boolean | undefined;
     borderAnimation?: boolean | undefined;
@@ -283,20 +283,14 @@ export declare const XAvatar: import("styled-components").IStyledComponent<"web"
 }>;
 declare const _default: {
     XAvatar: import("styled-components").IStyledComponent<"web", {
-        color?: string | undefined;
-        content?: string | undefined;
-        translate?: "yes" | "no" | undefined;
-        slot?: string | undefined;
-        style?: import("react").CSSProperties | undefined;
-        title?: string | undefined;
-        full?: boolean | undefined;
-        children: import("react").ReactNode;
         primary?: boolean | undefined;
         success?: boolean | undefined;
         warning?: boolean | undefined;
         error?: boolean | undefined;
         disabled?: boolean | undefined;
-        onClick?: import("react").MouseEventHandler<HTMLElement> | undefined;
+        slot?: string | undefined;
+        style?: import("react").CSSProperties | undefined;
+        title?: string | undefined;
         key?: import("react").Key | null | undefined;
         defaultChecked?: boolean | undefined;
         defaultValue?: string | number | readonly string[] | undefined;
@@ -316,9 +310,11 @@ declare const _default: {
         placeholder?: string | undefined;
         spellCheck?: (boolean | "true" | "false") | undefined;
         tabIndex?: number | undefined;
+        translate?: "yes" | "no" | undefined;
         radioGroup?: string | undefined;
         role?: import("react").AriaRole | undefined;
         about?: string | undefined;
+        content?: string | undefined;
         datatype?: string | undefined;
         inlist?: any;
         prefix?: string | undefined;
@@ -331,6 +327,7 @@ declare const _default: {
         autoCapitalize?: string | undefined;
         autoCorrect?: string | undefined;
         autoSave?: string | undefined;
+        color?: string | undefined;
         itemProp?: string | undefined;
         itemScope?: boolean | undefined;
         itemType?: string | undefined;
@@ -339,11 +336,11 @@ declare const _default: {
         results?: number | undefined;
         security?: string | undefined;
         unselectable?: "on" | "off" | undefined;
-        inputMode?: "none" | "search" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
+        inputMode?: "search" | "text" | "none" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
         is?: string | undefined;
         'aria-activedescendant'?: string | undefined;
         'aria-atomic'?: (boolean | "true" | "false") | undefined;
-        'aria-autocomplete'?: "none" | "list" | "inline" | "both" | undefined;
+        'aria-autocomplete'?: "list" | "none" | "inline" | "both" | undefined;
         'aria-braillelabel'?: string | undefined;
         'aria-brailleroledescription'?: string | undefined;
         'aria-busy'?: (boolean | "true" | "false") | undefined;
@@ -353,17 +350,17 @@ declare const _default: {
         'aria-colindextext'?: string | undefined;
         'aria-colspan'?: number | undefined;
         'aria-controls'?: string | undefined;
-        'aria-current'?: boolean | "page" | "time" | "true" | "false" | "step" | "location" | "date" | undefined;
+        'aria-current'?: boolean | "time" | "step" | "page" | "true" | "false" | "location" | "date" | undefined;
         'aria-describedby'?: string | undefined;
         'aria-description'?: string | undefined;
         'aria-details'?: string | undefined;
         'aria-disabled'?: (boolean | "true" | "false") | undefined;
-        'aria-dropeffect'?: "none" | "link" | "copy" | "execute" | "move" | "popup" | undefined;
+        'aria-dropeffect'?: "link" | "none" | "copy" | "execute" | "move" | "popup" | undefined;
         'aria-errormessage'?: string | undefined;
         'aria-expanded'?: (boolean | "true" | "false") | undefined;
         'aria-flowto'?: string | undefined;
         'aria-grabbed'?: (boolean | "true" | "false") | undefined;
-        'aria-haspopup'?: boolean | "grid" | "dialog" | "menu" | "true" | "false" | "listbox" | "tree" | undefined;
+        'aria-haspopup'?: boolean | "dialog" | "menu" | "grid" | "true" | "false" | "listbox" | "tree" | undefined;
         'aria-hidden'?: (boolean | "true" | "false") | undefined;
         'aria-invalid'?: boolean | "true" | "false" | "grammar" | "spelling" | undefined;
         'aria-keyshortcuts'?: string | undefined;
@@ -380,7 +377,7 @@ declare const _default: {
         'aria-posinset'?: number | undefined;
         'aria-pressed'?: boolean | "true" | "false" | "mixed" | undefined;
         'aria-readonly'?: (boolean | "true" | "false") | undefined;
-        'aria-relevant'?: "all" | "text" | "additions" | "additions removals" | "additions text" | "removals" | "removals additions" | "removals text" | "text additions" | "text removals" | undefined;
+        'aria-relevant'?: "text" | "all" | "additions" | "additions removals" | "additions text" | "removals" | "removals additions" | "removals text" | "text additions" | "text removals" | undefined;
         'aria-required'?: (boolean | "true" | "false") | undefined;
         'aria-roledescription'?: string | undefined;
         'aria-rowcount'?: number | undefined;
@@ -394,6 +391,7 @@ declare const _default: {
         'aria-valuemin'?: number | undefined;
         'aria-valuenow'?: number | undefined;
         'aria-valuetext'?: string | undefined;
+        children: import("react").ReactNode;
         dangerouslySetInnerHTML?: {
             __html: string | TrustedHTML;
         } | undefined;
@@ -483,6 +481,7 @@ declare const _default: {
         onWaitingCapture?: import("react").ReactEventHandler<HTMLElement> | undefined;
         onAuxClick?: import("react").MouseEventHandler<HTMLElement> | undefined;
         onAuxClickCapture?: import("react").MouseEventHandler<HTMLElement> | undefined;
+        onClick?: import("react").MouseEventHandler<HTMLElement> | undefined;
         onClickCapture?: import("react").MouseEventHandler<HTMLElement> | undefined;
         onContextMenu?: import("react").MouseEventHandler<HTMLElement> | undefined;
         onContextMenuCapture?: import("react").MouseEventHandler<HTMLElement> | undefined;
@@ -558,6 +557,7 @@ declare const _default: {
         onAnimationIterationCapture?: import("react").AnimationEventHandler<HTMLElement> | undefined;
         onTransitionEnd?: import("react").TransitionEventHandler<HTMLElement> | undefined;
         onTransitionEndCapture?: import("react").TransitionEventHandler<HTMLElement> | undefined;
+        full?: boolean | undefined;
         titleAttr?: import("../XText/XText.types").XTextTypes | undefined;
         simple?: boolean | undefined;
         borderAnimation?: boolean | undefined;
@@ -624,11 +624,11 @@ declare const _default: {
         results?: number | undefined;
         security?: string | undefined;
         unselectable?: "on" | "off" | undefined;
-        inputMode?: "none" | "search" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
+        inputMode?: "search" | "text" | "none" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
         is?: string | undefined;
         'aria-activedescendant'?: string | undefined;
         'aria-atomic'?: (boolean | "true" | "false") | undefined;
-        'aria-autocomplete'?: "none" | "list" | "inline" | "both" | undefined;
+        'aria-autocomplete'?: "list" | "none" | "inline" | "both" | undefined;
         'aria-braillelabel'?: string | undefined;
         'aria-brailleroledescription'?: string | undefined;
         'aria-busy'?: (boolean | "true" | "false") | undefined;
@@ -638,17 +638,17 @@ declare const _default: {
         'aria-colindextext'?: string | undefined;
         'aria-colspan'?: number | undefined;
         'aria-controls'?: string | undefined;
-        'aria-current'?: boolean | "page" | "time" | "true" | "false" | "step" | "location" | "date" | undefined;
+        'aria-current'?: boolean | "time" | "step" | "page" | "true" | "false" | "location" | "date" | undefined;
         'aria-describedby'?: string | undefined;
         'aria-description'?: string | undefined;
         'aria-details'?: string | undefined;
         'aria-disabled'?: (boolean | "true" | "false") | undefined;
-        'aria-dropeffect'?: "none" | "link" | "copy" | "execute" | "move" | "popup" | undefined;
+        'aria-dropeffect'?: "link" | "none" | "copy" | "execute" | "move" | "popup" | undefined;
         'aria-errormessage'?: string | undefined;
         'aria-expanded'?: (boolean | "true" | "false") | undefined;
         'aria-flowto'?: string | undefined;
         'aria-grabbed'?: (boolean | "true" | "false") | undefined;
-        'aria-haspopup'?: boolean | "grid" | "dialog" | "menu" | "true" | "false" | "listbox" | "tree" | undefined;
+        'aria-haspopup'?: boolean | "dialog" | "menu" | "grid" | "true" | "false" | "listbox" | "tree" | undefined;
         'aria-hidden'?: (boolean | "true" | "false") | undefined;
         'aria-invalid'?: boolean | "true" | "false" | "grammar" | "spelling" | undefined;
         'aria-keyshortcuts'?: string | undefined;
@@ -665,7 +665,7 @@ declare const _default: {
         'aria-posinset'?: number | undefined;
         'aria-pressed'?: boolean | "true" | "false" | "mixed" | undefined;
         'aria-readonly'?: (boolean | "true" | "false") | undefined;
-        'aria-relevant'?: "all" | "text" | "additions" | "additions removals" | "additions text" | "removals" | "removals additions" | "removals text" | "text additions" | "text removals" | undefined;
+        'aria-relevant'?: "text" | "all" | "additions" | "additions removals" | "additions text" | "removals" | "removals additions" | "removals text" | "text additions" | "text removals" | undefined;
         'aria-required'?: (boolean | "true" | "false") | undefined;
         'aria-roledescription'?: string | undefined;
         'aria-rowcount'?: number | undefined;
