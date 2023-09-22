@@ -1,4 +1,5 @@
 /// <reference types="react" />
+/// <reference types="react" />
 import XFileTypes from './XFile.types';
 export declare const XFile: import("styled-components").IStyledComponent<"web", {
     full?: boolean | undefined;

@@ -1,4 +1,5 @@
 /// <reference types="react" />
+/// <reference types="react" />
 export declare const XLabel: import("styled-components").IStyledComponent<"web", {
     color?: string | undefined;
     content?: string | undefined;

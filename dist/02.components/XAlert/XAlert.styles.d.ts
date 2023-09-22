@@ -1,4 +1,5 @@
 /// <reference types="react" />
+/// <reference types="react" />
 import XAlertTypes from './XAlert.types';
 export declare const WrapperXAlert: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").Substitute<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLDivElement>, HTMLDivElement>, Pick<XAlertTypes, "simple" | "isOpen" | "errorMessage">>>;
 declare const S: {

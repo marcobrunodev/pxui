@@ -1,4 +1,5 @@
 /// <reference types="react" />
+/// <reference types="react" />
 declare const S: {
     XDiscord: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").Substitute<{
         color?: string | undefined;
