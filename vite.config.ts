@@ -10,8 +10,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'PixUI',
-      fileName: 'pixui'
+      name: 'PxUI',
+      fileName: 'pxui'
     },
     rollupOptions: {
       external: [...Object.keys(packageJson.peerDependencies)],
