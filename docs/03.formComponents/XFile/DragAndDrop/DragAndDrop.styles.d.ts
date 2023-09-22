@@ -1,4 +1,5 @@
 /// <reference types="react" />
+/// <reference types="react" />
 import DragAndDropTypes from './DragAndDrop.types';
 declare const S: {
     DragAndDrop: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").Substitute<Omit<{

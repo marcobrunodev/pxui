@@ -1,4 +1,5 @@
 /// <reference types="react" />
+/// <reference types="react" />
 declare const S: {
     XFieldset: import("styled-components").IStyledComponent<"web", {
         ref?: import("react").LegacyRef<HTMLDivElement> | undefined;

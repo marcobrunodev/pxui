@@ -55,6 +55,5 @@
   },
   "module": "./dist/pxui.es.js",
   "main": "./dist/pxui.js",
-  "types": "./dist/index.d.ts",
-  "readme": "ERROR: No README data found!"
+  "types": "./dist/index.d.ts"
 }

@@ -1,4 +1,5 @@
 /// <reference types="react" />
+/// <reference types="react" />
 declare const S: {
     XCard: import("styled-components").IStyledComponent<"web", {
         full?: boolean | undefined;
