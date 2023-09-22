@@ -1,16 +1,19 @@
 /// <reference types="react" />
 /// <reference types="react" />
 export declare const XLabel: import("styled-components").IStyledComponent<"web", {
-    primary?: boolean | undefined;
-    success?: boolean | undefined;
-    warning?: boolean | undefined;
-    error?: boolean | undefined;
-    disabled?: boolean | undefined;
+    color?: string | undefined;
+    content?: string | undefined;
+    translate?: "yes" | "no" | undefined;
     big?: boolean | undefined;
     center?: boolean | undefined;
     slot?: string | undefined;
     style?: import("react").CSSProperties | undefined;
     title?: string | undefined;
+    primary?: boolean | undefined;
+    success?: boolean | undefined;
+    warning?: boolean | undefined;
+    error?: boolean | undefined;
+    disabled?: boolean | undefined;
     key?: import("react").Key | null | undefined;
     defaultChecked?: boolean | undefined;
     defaultValue?: string | number | readonly string[] | undefined;
@@ -30,11 +33,9 @@ export declare const XLabel: import("styled-components").IStyledComponent<"web",
     placeholder?: string | undefined;
     spellCheck?: (boolean | "true" | "false") | undefined;
     tabIndex?: number | undefined;
-    translate?: "yes" | "no" | undefined;
     radioGroup?: string | undefined;
     role?: import("react").AriaRole | undefined;
     about?: string | undefined;
-    content?: string | undefined;
     datatype?: string | undefined;
     inlist?: any;
     prefix?: string | undefined;
@@ -47,7 +48,6 @@ export declare const XLabel: import("styled-components").IStyledComponent<"web",
     autoCapitalize?: string | undefined;
     autoCorrect?: string | undefined;
     autoSave?: string | undefined;
-    color?: string | undefined;
     itemProp?: string | undefined;
     itemScope?: boolean | undefined;
     itemType?: string | undefined;
@@ -56,11 +56,11 @@ export declare const XLabel: import("styled-components").IStyledComponent<"web",
     results?: number | undefined;
     security?: string | undefined;
     unselectable?: "on" | "off" | undefined;
-    inputMode?: "search" | "text" | "none" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
+    inputMode?: "none" | "search" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
     is?: string | undefined;
     'aria-activedescendant'?: string | undefined;
     'aria-atomic'?: (boolean | "true" | "false") | undefined;
-    'aria-autocomplete'?: "list" | "none" | "inline" | "both" | undefined;
+    'aria-autocomplete'?: "none" | "list" | "inline" | "both" | undefined;
     'aria-braillelabel'?: string | undefined;
     'aria-brailleroledescription'?: string | undefined;
     'aria-busy'?: (boolean | "true" | "false") | undefined;
@@ -70,17 +70,17 @@ export declare const XLabel: import("styled-components").IStyledComponent<"web",
     'aria-colindextext'?: string | undefined;
     'aria-colspan'?: number | undefined;
     'aria-controls'?: string | undefined;
-    'aria-current'?: boolean | "time" | "step" | "page" | "true" | "false" | "location" | "date" | undefined;
+    'aria-current'?: boolean | "page" | "time" | "step" | "true" | "false" | "location" | "date" | undefined;
     'aria-describedby'?: string | undefined;
     'aria-description'?: string | undefined;
     'aria-details'?: string | undefined;
     'aria-disabled'?: (boolean | "true" | "false") | undefined;
-    'aria-dropeffect'?: "link" | "none" | "copy" | "execute" | "move" | "popup" | undefined;
+    'aria-dropeffect'?: "none" | "link" | "copy" | "execute" | "move" | "popup" | undefined;
     'aria-errormessage'?: string | undefined;
     'aria-expanded'?: (boolean | "true" | "false") | undefined;
     'aria-flowto'?: string | undefined;
     'aria-grabbed'?: (boolean | "true" | "false") | undefined;
-    'aria-haspopup'?: boolean | "dialog" | "menu" | "grid" | "true" | "false" | "listbox" | "tree" | undefined;
+    'aria-haspopup'?: boolean | "grid" | "dialog" | "menu" | "true" | "false" | "listbox" | "tree" | undefined;
     'aria-hidden'?: (boolean | "true" | "false") | undefined;
     'aria-invalid'?: boolean | "true" | "false" | "grammar" | "spelling" | undefined;
     'aria-keyshortcuts'?: string | undefined;
@@ -97,7 +97,7 @@ export declare const XLabel: import("styled-components").IStyledComponent<"web",
     'aria-posinset'?: number | undefined;
     'aria-pressed'?: boolean | "true" | "false" | "mixed" | undefined;
     'aria-readonly'?: (boolean | "true" | "false") | undefined;
-    'aria-relevant'?: "text" | "all" | "additions" | "additions removals" | "additions text" | "removals" | "removals additions" | "removals text" | "text additions" | "text removals" | undefined;
+    'aria-relevant'?: "all" | "text" | "additions" | "additions removals" | "additions text" | "removals" | "removals additions" | "removals text" | "text additions" | "text removals" | undefined;
     'aria-required'?: (boolean | "true" | "false") | undefined;
     'aria-roledescription'?: string | undefined;
     'aria-rowcount'?: number | undefined;
@@ -283,16 +283,19 @@ export declare const XLabel: import("styled-components").IStyledComponent<"web",
 }>;
 declare const S: {
     XLabel: import("styled-components").IStyledComponent<"web", {
-        primary?: boolean | undefined;
-        success?: boolean | undefined;
-        warning?: boolean | undefined;
-        error?: boolean | undefined;
-        disabled?: boolean | undefined;
+        color?: string | undefined;
+        content?: string | undefined;
+        translate?: "yes" | "no" | undefined;
         big?: boolean | undefined;
         center?: boolean | undefined;
         slot?: string | undefined;
         style?: import("react").CSSProperties | undefined;
         title?: string | undefined;
+        primary?: boolean | undefined;
+        success?: boolean | undefined;
+        warning?: boolean | undefined;
+        error?: boolean | undefined;
+        disabled?: boolean | undefined;
         key?: import("react").Key | null | undefined;
         defaultChecked?: boolean | undefined;
         defaultValue?: string | number | readonly string[] | undefined;
@@ -312,11 +315,9 @@ declare const S: {
         placeholder?: string | undefined;
         spellCheck?: (boolean | "true" | "false") | undefined;
         tabIndex?: number | undefined;
-        translate?: "yes" | "no" | undefined;
         radioGroup?: string | undefined;
         role?: import("react").AriaRole | undefined;
         about?: string | undefined;
-        content?: string | undefined;
         datatype?: string | undefined;
         inlist?: any;
         prefix?: string | undefined;
@@ -329,7 +330,6 @@ declare const S: {
         autoCapitalize?: string | undefined;
         autoCorrect?: string | undefined;
         autoSave?: string | undefined;
-        color?: string | undefined;
         itemProp?: string | undefined;
         itemScope?: boolean | undefined;
         itemType?: string | undefined;
@@ -338,11 +338,11 @@ declare const S: {
         results?: number | undefined;
         security?: string | undefined;
         unselectable?: "on" | "off" | undefined;
-        inputMode?: "search" | "text" | "none" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
+        inputMode?: "none" | "search" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | undefined;
         is?: string | undefined;
         'aria-activedescendant'?: string | undefined;
         'aria-atomic'?: (boolean | "true" | "false") | undefined;
-        'aria-autocomplete'?: "list" | "none" | "inline" | "both" | undefined;
+        'aria-autocomplete'?: "none" | "list" | "inline" | "both" | undefined;
         'aria-braillelabel'?: string | undefined;
         'aria-brailleroledescription'?: string | undefined;
         'aria-busy'?: (boolean | "true" | "false") | undefined;
@@ -352,17 +352,17 @@ declare const S: {
         'aria-colindextext'?: string | undefined;
         'aria-colspan'?: number | undefined;
         'aria-controls'?: string | undefined;
-        'aria-current'?: boolean | "time" | "step" | "page" | "true" | "false" | "location" | "date" | undefined;
+        'aria-current'?: boolean | "page" | "time" | "step" | "true" | "false" | "location" | "date" | undefined;
         'aria-describedby'?: string | undefined;
         'aria-description'?: string | undefined;
         'aria-details'?: string | undefined;
         'aria-disabled'?: (boolean | "true" | "false") | undefined;
-        'aria-dropeffect'?: "link" | "none" | "copy" | "execute" | "move" | "popup" | undefined;
+        'aria-dropeffect'?: "none" | "link" | "copy" | "execute" | "move" | "popup" | undefined;
         'aria-errormessage'?: string | undefined;
         'aria-expanded'?: (boolean | "true" | "false") | undefined;
         'aria-flowto'?: string | undefined;
         'aria-grabbed'?: (boolean | "true" | "false") | undefined;
-        'aria-haspopup'?: boolean | "dialog" | "menu" | "grid" | "true" | "false" | "listbox" | "tree" | undefined;
+        'aria-haspopup'?: boolean | "grid" | "dialog" | "menu" | "true" | "false" | "listbox" | "tree" | undefined;
         'aria-hidden'?: (boolean | "true" | "false") | undefined;
         'aria-invalid'?: boolean | "true" | "false" | "grammar" | "spelling" | undefined;
         'aria-keyshortcuts'?: string | undefined;
@@ -379,7 +379,7 @@ declare const S: {
         'aria-posinset'?: number | undefined;
         'aria-pressed'?: boolean | "true" | "false" | "mixed" | undefined;
         'aria-readonly'?: (boolean | "true" | "false") | undefined;
-        'aria-relevant'?: "text" | "all" | "additions" | "additions removals" | "additions text" | "removals" | "removals additions" | "removals text" | "text additions" | "text removals" | undefined;
+        'aria-relevant'?: "all" | "text" | "additions" | "additions removals" | "additions text" | "removals" | "removals additions" | "removals text" | "text additions" | "text removals" | undefined;
         'aria-required'?: (boolean | "true" | "false") | undefined;
         'aria-roledescription'?: string | undefined;
         'aria-rowcount'?: number | undefined;
